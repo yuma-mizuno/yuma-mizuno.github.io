@@ -12,7 +12,7 @@
 
 % moderncv themes
 \moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{black}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
@@ -22,23 +22,24 @@
 
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
-\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+\setlength{\hintscolumnwidth}{4.5cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
 \name{水野}{勇磨}
 %\title{}                               % optional, remove / comment the line if not wanted
-\address{数理・計算科学系}{東京工業大学}{〒152-8550 東京都目黒区大岡山2-12-1}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
-%\phone[mobile]{+1~(234)~567~890}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+% \address{理学研究院}{千葉大学}{〒152-8550 東京都目黒区大岡山2-12-1}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+% \phone[mobile]{080-1090-6866}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 %\phone[fixed]{+2~(345)~678~901}
 %\phone[fax]{+3~(456)~789~012}
-\email{mizuno.y.aj@m.titech.ac.jp}                               % optional, remove / comment the line if not wanted
+\address{〒279-0012 千葉県浦安市入船3-70-D6-4}
+\email{ymizuno@math.s.chiba-u.ac.jp}                               % optional, remove / comment the line if not wanted
 %\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
 %\social[linkedin]{john.doe}                        % optional, remove / comment the line if not wanted
 %\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
 %\social[github]{jdoe}                              % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
-%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\photo[64pt][0.4pt]{face.jpg}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
@@ -58,14 +59,25 @@
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
-\section{Education}
-\cventry{Apr 2018--present}{博士課程}{数理・計算科学系, 東京工業大学}{}{}{指導教員: 寺嶋郁二, 鈴木咲衣}  % arguments 3 to 6 can be left empty
-\cventry{Mar 2018}{修士（理学）}{数理・計算科学系, 東京工業大学}{}{}{指導教員: 寺嶋郁二}
-\cventry{Mar 2016}{学士（理学）}{情報科学科, 東京工業大学}{}{}{}
+\section{学歴}
+\cventry{2021年3月}{博士（理学）}{数理・計算科学系, 東京工業大学}{}{}{Thesis Title: Difference equations arising from cluster algebras\\ 指導教員: 寺嶋郁二, 鈴木咲衣}  % arguments 3 to 6 can be left empty
+\cventry{2018年3月}{修士（理学）}{数理・計算科学系, 東京工業大学}{}{}{指導教員: 寺嶋郁二}
+\cventry{2016年3月}{学士（理学）}{情報科学科, 東京工業大学}{}{}{}
 %\cventry{year--year}{degree or job title}{institution or employer}{city}{grade}{description}
 
-\section{Fellowships}
-\cvitem{2018--2021}{日本学術振興会特別研究員 (DC1).}
+% \section{フェローシップ}
+% \cvitem{2021年4月--2024年3月}{日本学術振興会特別研究員 (PD).}
+% \cvitem{2018年4月--2021年3月}{日本学術振興会特別研究員 (DC1).}
+
+\section{職歴}
+\cventry{2021年4月--現在}{日本学術振興会特別研究員 (PD)}{}{}{}{受入研究者:  井上玲}
+\cventry{2021年10月--2022年3月}{非常勤講師}{東京農工大学}{}{}{微分積分学Ⅱおよび演習}
+\cventry{2018年4月--2021年3月}{日本学術振興会特別研究員 (DC1)}{}{}{}{}
+
+\section{その他の活動}
+\begin{itemize}
+  \item Lean theorem proverの数学ライブラリmathlibへの貢献 (https://github.com/leanprover-community/mathlib)
+\end{itemize}
 
 %\section{Experience}
 %\subsection{Vocational}
@@ -121,37 +133,38 @@
 %  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
 %  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
 %\end{cvcolumns}
-\renewcommand{\refname}{Preprints}
-\begin{thebibliography}{1}
 
-\bibitem{mizuno2019difference}
-Difference equations arising from cluster algebras,
-\newblock arXiv:1912.05710, 2019.
+% \renewcommand{\refname}{Preprints}
+% \begin{thebibliography}{1}
 
-
-\end{thebibliography}
-
-\renewcommand{\refname}{Publications}
-\begin{thebibliography}{1}
+% \bibitem{mizuno2019difference}
+% Difference equations arising from cluster algebras,
+% \newblock arXiv:1912.05710, 2019.
 
 
-\bibitem{Mizuno2020}
-Exponents associated with {$Y$}-systems and their relationship with
-  {$q$}-series.
-\newblock {\em SIGMA Symmetry Integrability Geom. Methods Appl.}, 16:028, 42
-  pages, 2020.
+% \end{thebibliography}
 
-\bibitem{mizuno2020jacobian}
-Jacobian matrices of Y-seed mutations,
-\newblock Advances in Applied Mathematics, 115:101987, 2020.
+% \renewcommand{\refname}{Publications}
+% \begin{thebibliography}{1}
 
-\bibitem{kato2018quiver}
-Quiver mutation sequences and $q$-binomial identities,
-\newblock joint work with Akishi Kato and Yuji Terashima,
-\newblock International Mathematics Research Notices,
-  2018(23):7335--7358, 2018.
+
+% \bibitem{Mizuno2020}
+% Exponents associated with {$Y$}-systems and their relationship with
+%   {$q$}-series.
+% \newblock {\em SIGMA Symmetry Integrability Geom. Methods Appl.}, 16:028, 42
+%   pages, 2020.
+
+% \bibitem{mizuno2020jacobian}
+% Jacobian matrices of Y-seed mutations,
+% \newblock Advances in Applied Mathematics, 115:101987, 2020.
+
+% \bibitem{kato2018quiver}
+% Quiver mutation sequences and $q$-binomial identities,
+% \newblock joint work with Akishi Kato and Yuji Terashima,
+% \newblock International Mathematics Research Notices,
+%   2018(23):7335--7358, 2018.
   
-\end{thebibliography}
+% \end{thebibliography}
 
 % Publications from a BibTeX file without multibib
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
