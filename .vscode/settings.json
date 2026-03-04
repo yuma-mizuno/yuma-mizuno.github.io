@@ -1,0 +1,110 @@
+{
+  "[latex]": {
+    "editor.tabSize": 2,
+  },
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "latex-workshop.latex.autoBuild.run": "onFileChange",
+  "latex-workshop.latex.autoBuild.interval": 1000,
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latex-ja",
+      "tools": [
+        "uplatex",
+        "bibtex",
+        "uplatex",
+        "uplatex",
+        "dvipdfmx",
+      ]
+    },
+    {
+      "name": "pdflatex",
+      "tools": [
+        "pdflatex",
+        "bibtex",
+        "pdflatex",
+        "pdflatex"
+      ]
+    },
+    {
+      "name": "xelatex",
+      "tools": [
+        "xelatex",
+      ]
+    },
+    {
+      "name": "lualatex",
+      "tools": [
+        "lualatex",
+      ]
+    },
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "uplatex",
+      "command": "uplatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%",
+      ],
+      "env": {}
+    },
+    {
+      "name": "pdflatex",
+      "command": "pdflatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ],
+      "env": {}
+    },
+    {
+      "name": "xelatex",
+      "command": "xelatex",
+      "args": [
+        "%DOC%",
+      ],
+      "env": {}
+    },
+    {
+      "name": "lualatex",
+      "command": "lualatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%",
+      ],
+      "env": {}
+    },
+    {
+      "name": "bibtex",
+      "command": "bibtex",
+      "args": [
+        "%DOCFILE%",
+      ],
+      "env": {}
+    },
+    {
+      "name": "dvipdfmx",
+      "command": "dvipdfmx",
+      "args": [
+        "%DOC%",
+      ],
+      "env": {}
+    }
+  ],
+  "latex-workshop.latex.recipe.default": "lualatex",
+  "latex-workshop.view.pdf.viewer": "tab",
+  "spellright.language": [
+    "en"
+  ],
+  "spellright.documentTypes": [
+    "markdown",
+    "latex",
+    "plaintext"
+  ],
+}
