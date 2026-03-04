@@ -48,6 +48,23 @@
 % bibliography with mutiple entries
 %\usepackage{multibib}
 %\newcites{book,misc}{{Books},{Others}}
+\usepackage[backend=biber,style=numeric,sorting=ydnt,defernumbers=true]{biblatex}
+\addbibresource{publications.bib}
+\defbibenvironment{bibliography}
+  {\list{}{
+      \setlength{\leftmargin}{0pt}
+      \setlength{\itemindent}{0pt}
+      \setlength{\itemsep}{\bibitemsep}
+      \setlength{\parsep}{\bibparsep}}}
+  {\endlist}
+  {\item}
+\AtEveryBibitem{%
+  \ifkeyword{publication}{%
+    \clearfield{eprint}%
+    \clearfield{eprintclass}%
+    \clearfield{eprinttype}%
+  }{}
+}
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
@@ -63,10 +80,12 @@
 %\cventry{year--year}{degree or job title}{institution or employer}{city}{grade}{description}
 
 \section{Teaching}
+\cvitem{Semester 2, 2025-2026}{Lecturer, University College Cork, Measure Theory and Integration}
 \cvitem{Fall 2021}{Part-time lecturer, Tokyo University of Agriculture and Technology, Calculus}
 
 \section{Fellowships}
-\cvitem{2024--present}{Postdoctoral Researcher, University College Dublin}
+\cvitem{2025--present}{Postdoctoral Researcher, University College Cork}
+\cvitem{2024--2025}{Postdoctoral Researcher, University College Dublin}
 \cvitem{2021--2024}{JSPS Research Fellow (PD), Japan Society for the Promotion of Sciences}
 \cvitem{2018--2021}{JSPS Research Fellow (DC1), Japan Society for the Promotion of Sciences}
 
@@ -102,58 +121,9 @@
 %  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
 %  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
 %\end{cvcolumns}
-
-
-
-% Publications from a BibTeX file without multibib
-%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
-%  to redefine the heading string ("Publications"): 
-\renewcommand{\refname}{Preprints}
-\begin{thebibliography}{1}
-  \bibitem{dlm2025divisibility}
-   Divisibility by {$p$} for Markoff-like Surfaces,
-   \newblock joint work with Matthew de Courcy-Ireland and Matthew Litman,
-\newblock {\em arXiv preprint arXiv:2509.02187}, 2025.
-
-  \bibitem{mizuno2023periodic}
-   Periodic y-systems and nahm sums: the rank 2 case.
-\newblock {\em arXiv preprint arXiv:2301.13239}, 2023.
-
-\end{thebibliography}
-
-\renewcommand{\refname}{Publications}
-\begin{thebibliography}{1}
-
-\bibitem{mizuno2023remarks}
-  Remarks on nahm sums for symmetrizable matrices.
- \newblock {\em Ramanujan J.}, 66, 62, 2025.
-  
-\bibitem{mizuno2020q}
-  {$q$}-{P}ainlev\'{e} equations on cluster {P}oisson varieties via toric geometry.
-\newblock {\em Sel. Math. New Ser.}, 30, 19, 2024.
-
-\bibitem{mizuno2020difference}
-Difference equations arising from cluster algebras.
-\newblock {\em J. Algebraic Combin.}, 54(1):295--351, 2021.
-
-
-\bibitem{Mizuno2020}
-Exponents associated with {$Y$}-systems and their relationship with
-  {$q$}-series.
-\newblock {\em SIGMA Symmetry Integrability Geom. Methods Appl.}, 16:028, 42
-  pages, 2020.
-
-\bibitem{mizuno2020jacobian}
-Jacobian matrices of Y-seed mutations,
-\newblock Advances in Applied Mathematics, 115:101987, 2020.
-
-\bibitem{kato2018quiver}
-Quiver mutation sequences and $q$-binomial identities,
-\newblock joint work with Akishi Kato and Yuji Terashima,
-\newblock International Mathematics Research Notices,
-  2018(23):7335--7358, 2018.
-  
-\end{thebibliography}
+\nocite{*}
+\printbibliography[title={Preprints},keyword={preprint}]
+\printbibliography[title={Publications},keyword={publication}]
 
 \end{document}
 

@@ -1,0 +1,379 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ydnt/global//global/global/global}
+    \entry{ishibashi2026adjoint}{misc}{}{}
+      \name{author}{2}{}{%
+        {{hash=93526731e474847a62f4ab4b5032a3d3}{%
+           family={Ishibashi},
+           familyi={I\bibinitperiod},
+           given={Tsukasa},
+           giveni={T\bibinitperiod}}}%
+        {{hash=376f6ede03a123a8934bf35f2c87fe62}{%
+           family={Mizuno},
+           familyi={M\bibinitperiod},
+           given={Yuma},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{1d49d0e0aa95e9923d574eae1a131c52}
+      \strng{fullhash}{1d49d0e0aa95e9923d574eae1a131c52}
+      \strng{fullhashraw}{1d49d0e0aa95e9923d574eae1a131c52}
+      \strng{bibnamehash}{1d49d0e0aa95e9923d574eae1a131c52}
+      \strng{authorbibnamehash}{1d49d0e0aa95e9923d574eae1a131c52}
+      \strng{authornamehash}{1d49d0e0aa95e9923d574eae1a131c52}
+      \strng{authorfullhash}{1d49d0e0aa95e9923d574eae1a131c52}
+      \strng{authorfullhashraw}{1d49d0e0aa95e9923d574eae1a131c52}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.GT}
+      \field{eprinttype}{arXiv}
+      \field{title}{Adjoint Reidemeister torsion of 3-manifolds with torus boundary for semisimple algebraic groups}
+      \field{year}{2026}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2603.00816
+      \endverb
+      \keyw{preprint}
+    \endentry
+    \entry{decourcyireland2025divisibility}{misc}{}{}
+      \name{author}{3}{}{%
+        {{hash=0d8b27c463bb3bea5714eb0482661276}{%
+           family={Courcy-Ireland},
+           familyi={C\bibinithyphendelim I\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=d46694b5739ef379df75d3dfc5b1c541}{%
+           family={Litman},
+           familyi={L\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=376f6ede03a123a8934bf35f2c87fe62}{%
+           family={Mizuno},
+           familyi={M\bibinitperiod},
+           given={Yuma},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{33876e24e2657614d64084c17f4088f8}
+      \strng{fullhash}{33876e24e2657614d64084c17f4088f8}
+      \strng{fullhashraw}{33876e24e2657614d64084c17f4088f8}
+      \strng{bibnamehash}{33876e24e2657614d64084c17f4088f8}
+      \strng{authorbibnamehash}{33876e24e2657614d64084c17f4088f8}
+      \strng{authornamehash}{33876e24e2657614d64084c17f4088f8}
+      \strng{authorfullhash}{33876e24e2657614d64084c17f4088f8}
+      \strng{authorfullhashraw}{33876e24e2657614d64084c17f4088f8}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.NT}
+      \field{eprinttype}{arXiv}
+      \field{title}{Divisibility by {$p$} for Markoff-like Surfaces}
+      \field{year}{2025}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2509.02187
+      \endverb
+      \keyw{preprint}
+    \endentry
+    \entry{mizuno2025periodic}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=376f6ede03a123a8934bf35f2c87fe62}{%
+           family={Mizuno},
+           familyi={M\bibinitperiod},
+           given={Yuma},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{fullhash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{fullhashraw}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{bibnamehash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{authorbibnamehash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{authornamehash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{authorfullhash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{authorfullhashraw}{376f6ede03a123a8934bf35f2c87fe62}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.QA}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{SIGMA Symmetry Integrability Geom. Methods Appl.}
+      \field{title}{Periodic {$Y$}-systems and Nahm sums: the rank 2 case}
+      \field{volume}{21}
+      \field{year}{2025}
+      \true{nocite}
+      \field{pages}{094}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3842/sigma.2025.094
+      \endverb
+      \verb{eprint}
+      \verb 2301.13239
+      \endverb
+      \keyw{publication}
+    \endentry
+    \entry{mizuno2025remarks}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=376f6ede03a123a8934bf35f2c87fe62}{%
+           family={Mizuno},
+           familyi={M\bibinitperiod},
+           given={Yuma},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{fullhash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{fullhashraw}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{bibnamehash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{authorbibnamehash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{authornamehash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{authorfullhash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{authorfullhashraw}{376f6ede03a123a8934bf35f2c87fe62}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.QA}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Ramanujan Journal}
+      \field{title}{Remarks on Nahm sums for symmetrizable matrices}
+      \field{volume}{66}
+      \field{year}{2025}
+      \true{nocite}
+      \field{pages}{62}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s11139-025-01033-6
+      \endverb
+      \verb{eprint}
+      \verb 2305.02267
+      \endverb
+      \keyw{publication}
+    \endentry
+    \entry{mizuno2024qpainleve}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=376f6ede03a123a8934bf35f2c87fe62}{%
+           family={Mizuno},
+           familyi={M\bibinitperiod},
+           given={Yuma},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{fullhash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{fullhashraw}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{bibnamehash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{authorbibnamehash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{authornamehash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{authorfullhash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{authorfullhashraw}{376f6ede03a123a8934bf35f2c87fe62}
+      \field{extraname}{3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.AG}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Selecta Mathematica. New Series}
+      \field{title}{{$q$}-{P}ainlevé equations on cluster {P}oisson varieties via toric geometry}
+      \field{volume}{30}
+      \field{year}{2024}
+      \true{nocite}
+      \field{pages}{19}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s00029-023-00906-2
+      \endverb
+      \verb{eprint}
+      \verb 2008.11219
+      \endverb
+      \keyw{publication}
+    \endentry
+    \entry{mizuno2021difference}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=376f6ede03a123a8934bf35f2c87fe62}{%
+           family={Mizuno},
+           familyi={M\bibinitperiod},
+           given={Yuma},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{fullhash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{fullhashraw}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{bibnamehash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{authorbibnamehash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{authornamehash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{authorfullhash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{authorfullhashraw}{376f6ede03a123a8934bf35f2c87fe62}
+      \field{extraname}{4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.CO}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Journal of Algebraic Combinatorics}
+      \field{number}{1}
+      \field{title}{Difference equations arising from cluster algebras}
+      \field{volume}{54}
+      \field{year}{2021}
+      \true{nocite}
+      \field{pages}{295\bibrangedash 351}
+      \range{pages}{57}
+      \verb{doi}
+      \verb 10.1007/s10801-020-00978-9
+      \endverb
+      \verb{eprint}
+      \verb 1912.05710
+      \endverb
+      \keyw{publication}
+    \endentry
+    \entry{mizuno2020exponents}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=376f6ede03a123a8934bf35f2c87fe62}{%
+           family={Mizuno},
+           familyi={M\bibinitperiod},
+           given={Yuma},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{fullhash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{fullhashraw}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{bibnamehash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{authorbibnamehash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{authornamehash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{authorfullhash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{authorfullhashraw}{376f6ede03a123a8934bf35f2c87fe62}
+      \field{extraname}{5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.QA}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{SIGMA Symmetry Integrability Geom. Methods Appl.}
+      \field{title}{Exponents associated with {$Y$}-systems and their relationship with {$q$}-series}
+      \field{volume}{16}
+      \field{year}{2020}
+      \true{nocite}
+      \field{pages}{028}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3842/sigma.2020.028
+      \endverb
+      \verb{eprint}
+      \verb 1812.05863
+      \endverb
+      \keyw{publication}
+    \endentry
+    \entry{mizuno2020jacobian}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=376f6ede03a123a8934bf35f2c87fe62}{%
+           family={Mizuno},
+           familyi={M\bibinitperiod},
+           given={Yuma},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{fullhash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{fullhashraw}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{bibnamehash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{authorbibnamehash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{authornamehash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{authorfullhash}{376f6ede03a123a8934bf35f2c87fe62}
+      \strng{authorfullhashraw}{376f6ede03a123a8934bf35f2c87fe62}
+      \field{extraname}{6}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.RT}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Advances in Applied Mathematics}
+      \field{title}{Jacobian matrices of {$Y$}-seed mutations}
+      \field{volume}{115}
+      \field{year}{2020}
+      \true{nocite}
+      \field{pages}{101987}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.aam.2019.101987
+      \endverb
+      \verb{eprint}
+      \verb 1805.00044
+      \endverb
+      \keyw{publication}
+    \endentry
+    \entry{kato2018quiver}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=03802c81aaf6e743470d1486dae1247e}{%
+           family={Kato},
+           familyi={K\bibinitperiod},
+           given={Akishi},
+           giveni={A\bibinitperiod}}}%
+        {{hash=376f6ede03a123a8934bf35f2c87fe62}{%
+           family={Mizuno},
+           familyi={M\bibinitperiod},
+           given={Yuma},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=628a9fe6440d5f717ce4b9d5026c3fbc}{%
+           family={Terashima},
+           familyi={T\bibinitperiod},
+           given={Yuji},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{bb80d5e2086f56b78fea29fd19868f78}
+      \strng{fullhash}{bb80d5e2086f56b78fea29fd19868f78}
+      \strng{fullhashraw}{bb80d5e2086f56b78fea29fd19868f78}
+      \strng{bibnamehash}{bb80d5e2086f56b78fea29fd19868f78}
+      \strng{authorbibnamehash}{bb80d5e2086f56b78fea29fd19868f78}
+      \strng{authornamehash}{bb80d5e2086f56b78fea29fd19868f78}
+      \strng{authorfullhash}{bb80d5e2086f56b78fea29fd19868f78}
+      \strng{authorfullhashraw}{bb80d5e2086f56b78fea29fd19868f78}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.QA}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{International Mathematics Research Notices}
+      \field{number}{23}
+      \field{title}{Quiver mutation sequences and {$q$}-binomial identities}
+      \field{volume}{2018}
+      \field{year}{2018}
+      \true{nocite}
+      \field{pages}{7335\bibrangedash 7358}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1093/imrn/rnx108
+      \endverb
+      \verb{eprint}
+      \verb 1611.05969
+      \endverb
+      \keyw{publication}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
