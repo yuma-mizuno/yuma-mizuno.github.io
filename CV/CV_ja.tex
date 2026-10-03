@@ -1,0 +1,44 @@
+\documentclass[10pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}
+\moderncvcolor{black}
+\usepackage[haranoaji]{luatexja-preset}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\usepackage[scale=0.78]{geometry}
+\setlength{\hintscolumnwidth}{3.2cm}
+\name{水野}{勇磨}
+\title{履歴書}
+% Overseas institutions and the postal address retain their official English names.
+\address{School of Mathematical Sciences, University College Cork}{Western Gateway Building, Western Road, Cork, Ireland}
+\email{mizuno.y.aj@gmail.com}
+\extrainfo{\href{https://github.com/yuma-mizuno}{GitHub}\quad\href{https://researchmap.jp/yuma_mizuno}{researchmap}}
+\usepackage[backend=biber,style=numeric,sorting=ydnt,defernumbers=true]{biblatex}
+\addbibresource{publications.bib}
+\defbibenvironment{bibliography}
+  {\list{}{\setlength{\leftmargin}{0pt}\setlength{\itemindent}{0pt}
+      \setlength{\itemsep}{\bibitemsep}\setlength{\parsep}{\bibparsep}}}
+  {\endlist}{\item}
+\AtEveryBibitem{\ifkeyword{publication}{\clearfield{eprint}\clearfield{eprintclass}\clearfield{eprinttype}}{}}
+\begin{document}
+\makecvtitle
+
+\section{学歴・学位}
+\cventry{2021年3月}{博士（理学）}{東京工業大学 情報理工学院 数理・計算科学系}{}{}{博士論文：Difference equations arising from cluster algebras\\指導教員：寺嶋郁二、鈴木咲衣}
+\cventry{2018年3月}{修士（理学）}{東京工業大学 情報理工学院 数理・計算科学系}{}{}{指導教員：寺嶋郁二}
+\cventry{2016年3月}{学士（理学）}{東京工業大学 理学部 情報科学科}{}{}{}
+
+\section{教育歴}
+\cvitem{2025--2026年度\newline 第2学期}{University College Cork 講師\newline 担当科目：Measure Theory and Integration（測度論と積分）}
+\cvitem{2021年度 後期}{東京農工大学 非常勤講師\newline 担当科目：微分積分}
+
+\section{職歴・研究歴}
+\cvitem{2025年--現在}{University College Cork 博士研究員}
+\cvitem{2024年--2025年}{University College Dublin 博士研究員}
+\cvitem{2021年--2024年}{日本学術振興会 特別研究員（PD）}
+\cvitem{2018年--2021年}{日本学術振興会 特別研究員（DC1）}
+
+\nocite{*}
+\begin{refcontext}[sorting=none]
+\printbibliography[title={プレプリント},keyword={preprint}]
+\end{refcontext}
+\printbibliography[title={出版論文},keyword={publication}]
+\end{document}
