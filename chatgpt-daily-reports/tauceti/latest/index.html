@@ -1,0 +1,25 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Latest Tau Ceti report</title><meta name="robots" content="noindex"><style>:root{color-scheme:light dark}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif;line-height:1.72;max-width:920px;margin:0 auto;padding:28px 22px 80px}h1,h2,h3{line-height:1.28;margin-top:1.5em}h1{font-size:1.8rem;border-bottom:1px solid #8885;padding-bottom:.35em}h2{font-size:1.35rem;border-bottom:1px solid #8883;padding-bottom:.25em}h3{font-size:1.05rem}a{color:#0969da}@media(prefers-color-scheme:dark){a{color:#58a6ff}}blockquote{margin:1em 0;padding:.5em 1em;border-left:4px solid #8888;background:#8881}code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;background:#8882;padding:.1em .3em;border-radius:4px}.display-math{overflow-x:auto;margin:1.2em 0}.nav{font-size:.92rem;margin-bottom:1.3em}.nav a{margin-right:1em}</style><script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script></head><body><div class="nav"><a href="../../">Daily reports</a><a href="../latest/">Latest Tau Ceti</a></div><h1>Tau Ceti ReductiveGroups roadmap 日次進捗 - 2026-09-29</h1>
+<p>対象期間: <strong>2026-09-28 08:58 → 2026-09-29 09:16 (Europe/Dublin)</strong>。配信設定変更時に日次ファイルが保存されなかったため、merge 履歴と PR 本文から復元した。<strong>roadmap-relevant substantive changes は4件</strong>。</p>
+<h2>1. 今回前進した roadmap target</h2>
+<h3>Layer 3: normal subgroup quotient</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/9778">#9778</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/eb046b1e7067a921abdd1f754252413cc85beecf"><code>eb046b1e</code></a> は normal Hopf ideal に対する coinvariant subalgebra を構成し、normal case で Hopf subalgebra になることを証明した。fppf quotient の representability に向け、coordinate ring の候補が明示された。残る主点は faithful flatness と \(I=H B^+\) の逆包含。</p>
+<h3>Layer 9: short-root F4</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/9683">#9683</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/98ccfc97af501345ec9887addca6962d09568984"><code>98ccfc97</code></a> は characteristic 2 の algebraically closed field 上で、numbered root subgroups と weight torus が生成する short-root \(F_4\) subgroup を smooth とした。generated subgroup と base-changed carrier の equality は未完。</p>
+<h3>Layer 9: tripled D4</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/9735">#9735</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/45f869b946f9151c9b561b2ce2d30ff7a2bfd7f0"><code>45f869b9</code></a> は generated tripled \(D_4\) subgroup の smoothness を証明した。既存の connectedness と合わせて generated subgroup は smooth + geometrically connected になった。<a href="https://github.com/TauCetiProject/TauCeti/pull/9737">#9737</a> は同じ endpoint の scope/documentation を精密化した follow-up。</p>
+<h3>Layer 9: short-root G2</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/9755">#9755</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/7bc9d806f23777dbf529cf57b87e69793c78d5bd"><code>7bc9d806</code></a> は characteristic 3 の algebraically closed field 上で generated short-root \(G_2\) subgroup の geometric connectedness を証明した。smoothness は既に main にあるので、この branch も smooth + connected が揃った。</p>
+<h2>2. 完成した endpoint</h2>
+<p>1. normal Hopf ideal の coinvariant Hopf subalgebra (#9778) 2. generated short-root \(F_4\) smoothness (#9683) 3. generated tripled \(D_4\) smoothness (#9735) 4. generated short-root \(G_2\) connectedness (#9755)</p>
+<h2>3. Reusable infrastructure</h2>
+<p>#9778 は affine group quotient の representability に直接再利用できる。#9683/#9735/#9755 は common-kernel generated-subgroup の reducedness / smoothness / connectedness API を explicit carriers に適用する標準パターンを強化した。</p>
+<h2>4. Refactor / maintenance</h2>
+<ul>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/9573">#9573</a>: Hopf kernel quotient API の整理。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/9737">#9737</a>: \(D_4\) smoothness module の scope 明確化。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/9837">#9837</a>: symplectic API の documentation 修正。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/9842">#9842</a>: symplectic group から \(GL\) への map を Mathlib API に統合。</li>
+</ul>
+<h2>5. Open gaps / blockers</h2>
+<p>Layer 3 は coinvariant Hopf algebra に対する faithful-flatness と quotient representability の assembly が残る。</p>
+<p>Layer 9 の共通 blocker は generated subgroup と original carrier の equality、その後の reductivity / root datum / pinned Chevalley--Demazure identification である。\(D_4\) と \(G_2\) は generated subgroup の smoothness + connectedness が揃い、\(F_4\) は smoothnessまで到達した。</p></body></html>
