@@ -1,25 +1,84 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Latest Tau Ceti report</title><meta name="robots" content="noindex"><style>:root{color-scheme:light dark}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif;line-height:1.72;max-width:920px;margin:0 auto;padding:28px 22px 80px}h1,h2,h3{line-height:1.28;margin-top:1.5em}h1{font-size:1.8rem;border-bottom:1px solid #8885;padding-bottom:.35em}h2{font-size:1.35rem;border-bottom:1px solid #8883;padding-bottom:.25em}h3{font-size:1.05rem}a{color:#0969da}@media(prefers-color-scheme:dark){a{color:#58a6ff}}blockquote{margin:1em 0;padding:.5em 1em;border-left:4px solid #8888;background:#8881}code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;background:#8882;padding:.1em .3em;border-radius:4px}.display-math{overflow-x:auto;margin:1.2em 0}.nav{font-size:.92rem;margin-bottom:1.3em}.nav a{margin-right:1em}</style><script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script></head><body><div class="nav"><a href="../../">Daily reports</a><a href="../latest/">Latest Tau Ceti</a></div><h1>Tau Ceti ReductiveGroups roadmap 日次進捗 - 2026-09-29</h1>
-<p>対象期間: <strong>2026-09-28 08:58 → 2026-09-29 09:16 (Europe/Dublin)</strong>。配信設定変更時に日次ファイルが保存されなかったため、merge 履歴と PR 本文から復元した。<strong>roadmap-relevant substantive changes は4件</strong>。</p>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tau Ceti ReductiveGroups roadmap - latest</title><style>body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;line-height:1.75;max-width:980px;margin:0 auto;padding:32px 20px;color:#202124;background:#fff}h1,h2,h3{line-height:1.3;margin-top:1.6em}h1{font-size:2rem;border-bottom:1px solid #ddd;padding-bottom:.35em}h2{font-size:1.45rem;border-bottom:1px solid #eee;padding-bottom:.25em}a{color:#0969da;text-decoration:none}a:hover{text-decoration:underline}code{background:#f6f8fa;padding:.15em .35em;border-radius:4px;font-family:ui-monospace,SFMono-Regular,Consolas,monospace}blockquote{border-left:4px solid #d0d7de;margin:1em 0;padding:.25em 1em;color:#57606a}li{margin:.35em 0}.math{overflow-x:auto;margin:1em 0}@media(max-width:600px){body{padding:20px 14px}h1{font-size:1.55rem}h2{font-size:1.25rem}}</style><script>MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script></head><body><h1>Tau Ceti ReductiveGroups roadmap 日次進捗 - 2026-10-05</h1>
+<p>対象期間: <strong>2026-10-04 09:00 → 2026-10-05 09:00 (Europe/Dublin)</strong>。 この期間に確認した <strong>roadmap-relevant substantive changes は21件</strong>。中心は <strong>Layer 3 の homogeneous/fppf quotients、Layer 7 の Borel/root-space structure、Layer 9 の prime-field (G_2) reductivity</strong> です。</p>
 <h2>1. 今回前進した roadmap target</h2>
-<h3>Layer 3: normal subgroup quotient</h3>
-<p><a href="https://github.com/TauCetiProject/TauCeti/pull/9778">#9778</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/eb046b1e7067a921abdd1f754252413cc85beecf"><code>eb046b1e</code></a> は normal Hopf ideal に対する coinvariant subalgebra を構成し、normal case で Hopf subalgebra になることを証明した。fppf quotient の representability に向け、coordinate ring の候補が明示された。残る主点は faithful flatness と \(I=H B^+\) の逆包含。</p>
-<h3>Layer 9: short-root F4</h3>
-<p><a href="https://github.com/TauCetiProject/TauCeti/pull/9683">#9683</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/98ccfc97af501345ec9887addca6962d09568984"><code>98ccfc97</code></a> は characteristic 2 の algebraically closed field 上で、numbered root subgroups と weight torus が生成する short-root \(F_4\) subgroup を smooth とした。generated subgroup と base-changed carrier の equality は未完。</p>
-<h3>Layer 9: tripled D4</h3>
-<p><a href="https://github.com/TauCetiProject/TauCeti/pull/9735">#9735</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/45f869b946f9151c9b561b2ce2d30ff7a2bfd7f0"><code>45f869b9</code></a> は generated tripled \(D_4\) subgroup の smoothness を証明した。既存の connectedness と合わせて generated subgroup は smooth + geometrically connected になった。<a href="https://github.com/TauCetiProject/TauCeti/pull/9737">#9737</a> は同じ endpoint の scope/documentation を精密化した follow-up。</p>
-<h3>Layer 9: short-root G2</h3>
-<p><a href="https://github.com/TauCetiProject/TauCeti/pull/9755">#9755</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/7bc9d806f23777dbf529cf57b87e69793c78d5bd"><code>7bc9d806</code></a> は characteristic 3 の algebraically closed field 上で generated short-root \(G_2\) subgroup の geometric connectedness を証明した。smoothness は既に main にあるので、この branch も smooth + connected が揃った。</p>
-<h2>2. 完成した endpoint</h2>
-<p>1. normal Hopf ideal の coinvariant Hopf subalgebra (#9778) 2. generated short-root \(F_4\) smoothness (#9683) 3. generated tripled \(D_4\) smoothness (#9735) 4. generated short-root \(G_2\) connectedness (#9755)</p>
-<h2>3. Reusable infrastructure</h2>
-<p>#9778 は affine group quotient の representability に直接再利用できる。#9683/#9735/#9755 は common-kernel generated-subgroup の reducedness / smoothness / connectedness API を explicit carriers に適用する標準パターンを強化した。</p>
-<h2>4. Refactor / maintenance</h2>
+<h3>Layer 3: fppf homogeneous quotient が一般形で構成</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/11556">PR #11556</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/b3028e219858b6903f52e8fbd7a1bdf9db7f29e1"><code>b3028e2</code></a> は affine group と closed subgroup に対する fppf homogeneous quotient を構成しました。</p>
+<p>これは normal subgroup quotientだけでなく (G/H) 型の homogeneous space を fppf sheafとして扱う一般 interfaceです。Borel/parabolic quotientsや flag varieties への直接の入口になります。</p>
+<h3>Layer 3: normal quotient の exact kernel descent</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/11948">PR #11948</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/e03f8ee0687b631937c5d9a596268d93d0b93715"><code>e03f8ee</code></a> は normal affine quotient の exact kernel propertyを base change / descent と結合しました。</p>
+<p>normal subgroup quotient の representability theoremを最終的に short exact sequence</p>
+<div class="math">\[1	o N	o G	o G/N	o1\]</div>
+<p>へ昇格するための重要な compatibilityです。</p>
+<h3>Layer 6: comodule invariants の exactness</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/11568">PR #11568</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/b3e38790960c2a0ab9bcec4cdab1b7b33a803a5c"><code>b3e3879</code></a> は comodule invariants functor の exactnessを証明しました。</p>
+<p>これは linearly reductive groups の categorical characterizationに直接つながります。Layer 6 の</p>
+<div class="math">\[	ext{reductive}leftrightarrow	ext{linearly reductive}\]</div>
+<p>と Reynolds-operator / invariants-exactness interfaceを整理するための substantive representation-theoretic inputです。</p>
+<h3>Layer 9: short-root (G_2/mathbf F_3) carrier が reductive に</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/11527">PR #11527</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/ff0a2a31e968c43878dca48593204dbf6d18d7eb"><code>ff0a2a3</code></a> は characteristic (3) の prime-field short-root (G_2) carrier が reductive であることを証明しました。</p>
+<p>smoothness、connectedness、(R_u=1)、root-generationが既に揃っていたので、special-isogeny carrier が genuine reductive group scheme として確立しました。</p>
+<p>これで (G_2/mathbf F_3) と (F_4/mathbf F_2) の双方が reductive carrier になり、exceptional special-isogeny theoryの geometric foundationが揃いました。</p>
+<h3>Layer 7: affine group schemes over a ring の Borel subgroup</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/11737">PR #11737</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/104d0fa3e451d7fca1ab90992edd675dd8ea638c"><code>104d0fa</code></a> は commutative base ring 上の affine group scheme に対して Borel subgroup data を定義しました。</p>
+<p>field 上の maximal connected solvable subgroupという classical notionを、geometric fibres と base-change-compatible dataを使う ring-level interfaceに移しています。Layer 9 の split reductive group scheme/pinning data に Borel を含めるための必要な over-base structureです。</p>
+<h3>Layer 7 / 9: matrix root subgroups を closed (mathbb G_a) として実現</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/11750">PR #11750</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/28b2fc96220a4b4a9ce7898f3a960e810d16d604"><code>28b2fc9</code></a> は matrix root subgroup maps を scheme-theoretic closed copies of the additive group として一般に package しました。</p>
+<p>pinning に必要な</p>
+<div class="math">\[x_alpha:mathbb G_ahookrightarrow G\]</div>
+<p>を単なる point formula でなく closed group-scheme morphismとして扱う共通 APIです。</p>
+<h3>Layer 7: normalizer による character / weight action</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/11590">PR #11590</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/76a23058d64de103b1cede145dc7bb01d1501d61"><code>76a2305</code></a> は torus normalizer の character group 上の actionを構成。</p>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/11627">PR #11627</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/4c0ff0b06d174614c4ff1af236354a01dea6e19b"><code>4c0ff0b</code></a> はこの action の image が finite であることを証明しました。</p>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/11798">PR #11798</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/13c2e4b0884bd952eee07cd16a2a8e887a9365d4"><code>13c2e4b</code></a> は normal subgroup の weight spaces が ambient action により permutationされる一般 theoremを追加しました。</p>
+<p>Weyl groupを (N_G(T)/T) から character-lattice actionへ接続する abstract infrastructureが揃いつつあります。</p>
+<h3>Layer 7/9: (SL_n) の adjoint root spaces と root subgroup differentials</h3>
+<p>この期間には (SL_n) の concrete root geometry が一気に繋がりました。</p>
 <ul>
-<li><a href="https://github.com/TauCetiProject/TauCeti/pull/9573">#9573</a>: Hopf kernel quotient API の整理。</li>
-<li><a href="https://github.com/TauCetiProject/TauCeti/pull/9737">#9737</a>: \(D_4\) smoothness module の scope 明確化。</li>
-<li><a href="https://github.com/TauCetiProject/TauCeti/pull/9837">#9837</a>: symplectic API の documentation 修正。</li>
-<li><a href="https://github.com/TauCetiProject/TauCeti/pull/9842">#9842</a>: symplectic group から \(GL\) への map を Mathlib API に統合。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/11817">#11817</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/2d829fa22ba6d45860aaca3c46c78c93b467ef7f"><code>2d829fa</code></a>: integral adjoint root lines。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/11792">#11792</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/a72cd0a646b8424813efcf88706e9023e0b40df3"><code>a72cd0a</code></a>: special-linear root subgroup differentials。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/11872">#11872</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/289bdab25091cded0f7b512d84839b8b22dca141"><code>289bdab</code></a>: integral adjoint comodule root spaces。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/11931">#11931</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/3479f1a5882d7a7630aef9411ecb31fccc4c467c"><code>3479f1a</code></a>: root differential と adjoint root space の同定。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/11854">#11854</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/23d8dc3d2adfbf001e9b6f21368ce8cc6747662d"><code>23d8dc3</code></a>: Chevalley line の subgroup character。</li>
 </ul>
-<h2>5. Open gaps / blockers</h2>
-<p>Layer 3 は coinvariant Hopf algebra に対する faithful-flatness と quotient representability の assembly が残る。</p>
-<p>Layer 9 の共通 blocker は generated subgroup と original carrier の equality、その後の reductivity / root datum / pinned Chevalley--Demazure identification である。\(D_4\) と \(G_2\) は generated subgroup の smoothness + connectedness が揃い、\(F_4\) は smoothnessまで到達した。</p></body></html>
+<p>これにより type (A) では</p>
+<div class="math">\[x_alpha
+quadstackrel{d}{longmapsto}quad
+X_alphainmathfrak g_alpha\]</div>
+<p>が integral/scheme/representation levelsで直接接続されました。</p>
+<h3>Layer 7: (SL_n) Borel の Lie algebra と positive root containment</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/11833">PR #11833</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/db43772e5feca9aea1df5b36e2e5bb6053e9cbed"><code>db43772</code></a> は standard (SL_n) Borel の Lie algebraを upper-triangular trace-zero matrices と同定しました。</p>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/11958">PR #11958</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/f65274745c5ad1d46a5488d854b0272adffcb4a8"><code>f652747</code></a> は positive root subgroups が standard Borelを通って factorすることを証明しました。</p>
+<p>したがって (SL_n) の</p>
+<div class="math">\[(T,B,{U_alpha}_{alpha&gt;0})\]</div>
+<p>という standard pinning/Borel configurationが scheme-level にかなり近づきました。</p>
+<h3>Layer 2 / 6: smooth cotangent module の finite projectivity</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/11802">PR #11802</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/a7ff68eb21a1b2d7e47a81392df422b399f5f337"><code>a7ff68e</code></a> は smooth affine group の augmentation cotangent moduleを finite projective としました。</p>
+<p>Lie algebra bundle / dimension / differential machineryを ring base 上で扱うための重要な Layer 2 infrastructureです。</p>
+<h3>Representation infrastructure</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/11883">PR #11883</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/dd3cd53504d62ee0f2c8b99f1e40b02cdc8c993c"><code>dd3cd53</code></a> は linear Hom comodules を構成。</p>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/11894">PR #11894</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/47af4c6ae47a3c340c40e7339edfd963d1c9c28c"><code>47af4c6</code></a> は family-invariant endomorphismsにより subgroup points を検出する criterionを追加しました。</p>
+<h3>Layer 3 API: Hopf-ideal inverse images</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/11679">PR #11679</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/4777b985cfff12f28d28780fdf7c0f35e31af446"><code>4777b98</code></a> は Hopf-ideal inverse-image APIを整理・一般化しました。subgroup pullback / base change / kernel calculations の基礎です。</p>
+<h3>Layer 7: Chevalley theorem in line form</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/11535">PR #11535</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/e328a490799e4af10ac26f72fa0323ecc6c6d29c"><code>e328a49</code></a> は Chevalley theorem の「closed subgroup は適切な representation の line stabilizer」とする line-formを formalize しました。</p>
+<p>これは homogeneous spaces、parabolics、Borel fixed-point route に直接使う general structure-theory inputです。</p>
+<h2>2. 完成した endpoint</h2>
+<ol>
+<li>prime-field short-root (G_2/mathbf F_3) carrier の reductivity。</li>
+<li>affine group schemes over a ring の Borel-data interface。</li>
+<li>matrix root subgroups の closed (mathbb G_a) realization。</li>
+<li>(SL_n) の standard Borel Lie algebra / positive-root containment / root differential-root space comparison。</li>
+<li>fppf homogeneous quotient construction。</li>
+</ol>
+<h2>3. roadmap を支える reusable infrastructure</h2>
+<p>normalizer character action、finite image、weight-space permutation、Chevalley line theorem、finite-projective cotangent modules、Hom comodules が general Layer 6/7 theory を支える形で揃いました。</p>
+<h2>4. 重要な refactor / maintenance / CI</h2>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/11552">#11552</a> の trivial-group point API 整理、<a href="https://github.com/TauCetiProject/TauCeti/pull/11684">#11684</a> の associative (mathfrak{sl}_2) commutation simplification等は substantive countに含めていません。</p>
+<p>またこの期間内に mathlib bump <a href="https://github.com/TauCetiProject/TauCeti/pull/11837">#11837</a> がありましたが maintenance-onlyです。</p>
+<h2>5. 現在の open gaps / blockers</h2>
+<ul>
+<li><strong>Layer 3:</strong> homogeneous quotient は fppf sheafとして構成済み。一般 representabilityと quotient geometryが次。</li>
+<li><strong>Layer 6:</strong> exactness of invariants と Cartier theorem等を組み合わせた characteristic-zero reductive (Rightarrow) linearly reductive の最終 assembly。</li>
+<li><strong>Layer 7:</strong> (SL_n) standard ((T,B,U_alpha)) はかなり揃った。次は standard pinning package と general reductive group の root-space / Borel theory。</li>
+<li><strong>Layer 9:</strong> (G_2/mathbf F_3), (F_4/mathbf F_2) が reductive carrierになった。次は pinned root datum identificationと special isogenies / uniform Chevalley-Demazure comparison。</li>
+</ul></body></html>
