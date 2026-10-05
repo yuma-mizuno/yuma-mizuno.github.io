@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tau Ceti ReductiveGroups roadmap - 2026-10-03</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;line-height:1.75;max-width:980px;margin:0 auto;padding:32px 20px;color:#202124;background:#fff}
+h1,h2,h3{line-height:1.3;margin-top:1.6em} h1{font-size:2rem;border-bottom:1px solid #ddd;padding-bottom:.35em} h2{font-size:1.45rem;border-bottom:1px solid #eee;padding-bottom:.25em}
+a{color:#0969da;text-decoration:none} a:hover{text-decoration:underline} code{background:#f6f8fa;padding:.15em .35em;border-radius:4px;font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+blockquote{border-left:4px solid #d0d7de;margin:1em 0;padding:.25em 1em;color:#57606a} li{margin:.35em 0}.math{overflow-x:auto;margin:1em 0}
+@media(max-width:600px){body{padding:20px 14px}h1{font-size:1.55rem}h2{font-size:1.25rem}}
+</style>
+<script>MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head><body><h1>Tau Ceti ReductiveGroups roadmap 日次進捗 - 2026-10-03</h1>
+<p>対象期間: <strong>2026-10-02 09:00 → 2026-10-03 09:00 (Europe/Dublin)</strong>。 この期間に確認した <strong>roadmap-relevant substantive changes は17件</strong>。中心は <strong>Layer 7 の (SL_n) Borel theory</strong> と <strong>Layer 9 の explicit carrier reductivity route</strong> です。</p>
+<h2>1. 今回前進した roadmap target</h2>
+<h3>Layer 7: (SL_n) Borel subgroups と conjugacy が完成</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/10920">PR #10920</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/f5ac66f8cfe91fbece6d91516a807fcbd12b05d1"><code>f5ac66f</code></a> は、前日に入った upper-triangular (SL_n) subgroup scheme と Lie--Kolchin triangularization を使い、</p>
+<div class="math">\[oxed{	ext{Borel subgroups of }SL_n	ext{ are conjugate}}\]</div>
+<p>を arbitrary rank で formalize しました。</p>
+<p>これにより type (A) の classical worked exampleでは、maximal torus conjugacyだけでなく Borel conjugacyも scheme-theoretically揃いました。一般 reductive group の Borel conjugacyは依然 open です。</p>
+<h3>Layer 9: tripled (D_4) carrier の complete reducibility と (R_u=1)</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/10834">PR #10834</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/a023db156ec4964f48718b12bc3200abd8f60429"><code>a023db1</code></a> は tripled (D_4) carrier の standard representation を completely reducible とし、generated carrier の unipotent radical を trivial にしました。</p>
+<p>carrier の smoothness / connectedness / root-generation は既に main にあったため、reductivity recognition の主要 ingredients がさらに揃いました。</p>
+<h3>Layer 9: type (B) spin carrier の simple standard comodule と (R_u=1)</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/10757">PR #10757</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/7c19b0470768c9992a6e9fa31489810301029515"><code>7c19b04</code></a> は full-weight type (B) spin carrier の standard comodule を simple とし、unipotent radical を trivial にしました。</p>
+<p>前日までに smoothness / connectedness / root-generation が入っていたので、type (B) carrier も reductivity endpoint にかなり近づきました。</p>
+<h3>Layer 9: short-root (G_2), characteristic (3) の (R_u=1)</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/10952">PR #10952</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/3d22f239ba42fc89ed291627cb85e43755bc8a8a"><code>3d22f23</code></a> は characteristic (3) の generated short-root (G_2) subgroup の unipotent radicalを trivial にしました。</p>
+<p>prime-field carrier の smoothness / connectedness / root-generation と合わせ、special-isogeny carrier 自身の reductivity recognitionへ進んでいます。</p>
+<h3>Layer 9: doubled (E_6) carrier の (R_u=1)</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/11023">PR #11023</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/71fecfd502dc05b3e44827a87fb53956817fac67"><code>71fecfd</code></a> は reduced doubled (E_6) carrier の unipotent radical を trivial にしました。</p>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/10921">PR #10921</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/a32fcece6ee5571fdf024489bc112587c1a5f36d"><code>a32fcec</code></a> は doubled (E_6) representation が2つの minuscule summands を保存することを formalize し、complete-reducibility routeの基盤を整えました。</p>
+<h3>Layer 9: type (D) spin representation の complete reducibility</h3>
+<p>type (D) spin carrier について representation-theoretic structure が連続して入りました。</p>
+<ul>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10911">#10911</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/a056cdb44ad53a937780687a2b894b189c7fe4ef"><code>a056cdb</code></a>: two half-spin summands の保存。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/11037">#11037</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/0f7b94aa4ed04c111790a3b2f9aaf569d7d728fe"><code>0f7b94a</code></a>: signed simple-root moves。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/11053">#11053</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/66d3072d2f5cfa81c6e72db798f57979a91c07bd"><code>66d3072</code></a>: torus weight lines の抽出。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/11091">#11091</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/808d68be57882885e57459da152412acc1a22082"><code>808d68b</code></a>: standard spin comodule の complete reducibility。</li>
+</ul>
+<p>これにより type (D) carrier の normal-unipotent eliminationに必要な representation input が揃いました。</p>
+<h3>Layer 9: prime-field (F_4) carrier の smoothness + simple comodule</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/11146">PR #11146</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/c592b9b24ec8066435b61448cdfc5426f2fa549f"><code>c592b9b</code></a> は characteristic (2) の prime-field short-root (F_4) carrier の smoothness を証明。</p>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/11202">PR #11202</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/723910bfdbed19136697769929b7dc2396341adb"><code>723910b</code></a> は 26-dimensional short-root comodule の simplicity を証明しました。</p>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/11124">PR #11124</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/eca66ca371b98122ecd563711e65e00f643fad33"><code>eca66ca</code></a> は invariant weight components を抽出し、この simplicity proof と special-isogeny representation analysis の基盤を供給します。</p>
+<h3>Layer 3: dominant homomorphism の faithful-flatness route</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/11197">PR #11197</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/08744240a831fb6ffda84377a9e927a3bc666094"><code>0874424</code></a> は dominant homomorphism に対する generic freeness / faithful-flatness machinery を構築しました。normal quotient representability と image/quotient comparisonの一般化に直接関係します。</p>
+<h3>Representation infrastructure: exterior powers and stabilizers</h3>
+<ul>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/11061">#11061</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/5a91a274011d277f0ab4414da937eb4ed9c3f22c"><code>5a91a27</code></a>: arbitrary subspace と top exterior line stabilizer の同定。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/11081">#11081</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/5f597f67582a1d8b6cc678e6975d08006e4c40a5"><code>5f597f6</code></a>: exterior-power comodules と point actions。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/11110">#11110</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/cff5837501825cff35736263fd35a675a27c9963"><code>cff5837</code></a>: square-zero divided-power preservation を sets に一般化。</li>
+</ul>
+<p>これらは parabolic / stabilizer constructions と exceptional carrier representationを支える reusable API です。</p>
+<h2>2. 完成した endpoint</h2>
+<ol>
+<li>(SL_n) Borel conjugacy（all rank）。</li>
+<li>tripled (D_4), type (B), short-root (G_2), doubled (E_6) で (R_u=1) への大幅な進展。</li>
+<li>type (D) spin standard comodule の complete reducibility。</li>
+<li>prime-field (F_4) carrier の smoothness + simple 26-dimensional comodule。</li>
+</ol>
+<h2>3. roadmap を支える reusable infrastructure</h2>
+<p>exterior-power comodules、subspace/exterior-line stabilizers、generic freeness、divided-power preservationが今後の Borel/parabolic と explicit exceptional carrier recognitionに再利用できます。</p>
+<h2>4. 重要な refactor / maintenance / CI</h2>
+<p>この期間には <a href="https://github.com/TauCetiProject/TauCeti/pull/11104">#11104</a> の hyperbolic polarization API 統合などがありますが、substantive countには含めていません。</p>
+<h2>5. 現在の open gaps / blockers</h2>
+<ul>
+<li><strong>Layer 7:</strong> (SL_n) Borel conjugacyは完成。一般 reductive group の conjugacyには flag/Borel fixed-point machinery が必要。</li>
+<li><strong>Layer 9:</strong> generated carriers の (R_u=1) が多くの types で揃いつつある。残る共通課題は full reductivity、maximal torus/root datum、uniform pinned Chevalley-Demazure identification。</li>
+<li><strong>(F_4/mathbf F_2):</strong> smooth + simple representationが揃い、次は reductivityと special-isogeny compatibility。</li>
+</ul></body></html>
