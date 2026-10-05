@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>arXiv math/new report - 2026-10-05</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;line-height:1.75;max-width:980px;margin:0 auto;padding:32px 20px;color:#202124;background:#fff}
+h1,h2,h3{line-height:1.3;margin-top:1.6em}h1{font-size:2rem;border-bottom:1px solid #ddd;padding-bottom:.35em}h2{font-size:1.45rem;border-bottom:1px solid #eee;padding-bottom:.25em}
+a{color:#0969da;text-decoration:none}a:hover{text-decoration:underline}code{background:#f6f8fa;padding:.15em .35em;border-radius:4px;font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+blockquote{border-left:4px solid #d0d7de;margin:1em 0;padding:.25em 1em;color:#57606a}li{margin:.35em 0}.math{overflow-x:auto;margin:1em 0}hr{border:0;border-top:1px solid #ddd;margin:2em 0}
+@media(max-width:600px){body{padding:20px 14px}h1{font-size:1.55rem}h2{font-size:1.25rem}}
+</style>
+<script>MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head><body><h1>arXiv math/new レポート (2026-10-05)</h1>
+<h2>本日の listing</h2>
+<blockquote><strong>Showing new listings for Monday, 5 October 2026</strong><br><br><strong>New submissions: 319</strong></blockquote>
+<p>arXiv の math/new を直接取得し、上記ヘッダーと New submissions (showing 319 of 319 entries) を確認した。</p>
+<p>今日は cluster algebra を直接主題とする論文がある。Quantum modular form(s)、3次元多様体の quantum invariant、\(q\)-Painlevé equation を直接主題とする論文は確認できなかった。一方、modular Nahm sums、finite-group quantum doubles、quiver に沿った Nahm equations と Hamiltonian reduction、classical Painlevé II reduction まで含めると、数学的に近い論文が複数ある。以下の5件を選ぶ。</p>
+<h2>1. Signed seeds and G-gradings on cluster algebras</h2>
+<p><strong>Authors:</strong> Lauren Williams, Alan Yan</p>
+<p><strong>Link:</strong> https://arxiv.org/abs/2610.03612</p>
+<h3>概要</h3>
+<p>Cluster variety の positive part だけでなく、cluster variables に符号を割り当てることから得られる signed cells を cluster-theoretic に組織化する。基本概念は signed seed であり、これは cluster variables 上の \(\mathbb{Z}/2\mathbb{Z}\)-grading とみなせる。さらに任意の abelian group \(G\) に対して \(G\)-graded seed を導入し、mutation と両立する形で各 cluster variable に \(G\) の元を割り当てる。</p>
+<p>この一般化は、\(G=\{-1,1\}\) では signed seeds、\(G=\mathbb{C}^*\) では cluster automorphism/dilation group、\(G=\mathbb{Z}^d\) では graded cluster algebra を回収する。具体例として square matrices、symmetric matrices、skew-symmetric matrices、positroid varieties、amplituhedron tiles を扱い、\(G=\mathbb{R}\) または \(\mathbb{Z}\) の場合には tropical mutation との関係も示す。</p>
+<h3>数学的関連性</h3>
+<p>通常の positivity は cluster chart 上の全変数を正とする領域を選ぶが、signed seeds はこの構造を「符号付きの chamber」に拡張する。したがって、同じ cluster variety 上に存在する複数の実領域や複数の cluster presentations を比較するとき、どの離散データが mutation によって保存・変換されるかを記述する自然な枠組みになる。</p>
+<p>特に \(G\)-grading を mutation-compatible data として統一的に扱う点は、coefficient gradings、cluster automorphisms、tropicalization を同じ形式に置く。Braid varieties や weave に由来する cluster charts、total positivity と符号条件を伴う実部分、tropical mutation dynamics を比較する際にも、grading と sign pattern を独立した付加構造として追跡できることが有用である。</p>
+<h2>2. A uniform degree bound for modular rank-two Nahm sums</h2>
+<p><strong>Author:</strong> Cetin Hakimoglu-Brown</p>
+<p><strong>Link:</strong> https://arxiv.org/abs/2610.02743</p>
+<h3>概要</h3>
+<p>Rank two の symmetrizable Nahm sum \(F\) を考え、その symmetrizer を \(\operatorname{diag}(d_1,d_2)\)、正定値有理行列と rational shifts を許す一般的な設定で modularity の算術的制約を調べる。Nahm point が生成する数体を \(K\) とすると、ある rational shift \(q^cF\) が modular であるなら</p>
+<div class="math">\[[K:\mathbb{Q}] \le 24\]</div>
+<p>であることを証明する。</p>
+<p>証明では、radial asymptotic expansion の対数に現れる高次係数が modularity によって消滅することを利用し、その結果得られる多項式方程式を Newton polygons と determinant conic に沿った pole-order analysis で解析する。Symmetrizer ratio \(m=d_2/d_1\) が \(1\) の場合には共通成分を特定し、equal row sums の場合には Bloch-group torsion からさらに</p>
+<div class="math">\[[K:\mathbb{Q}] \le 2\]</div>
+<p>を得る。Complementary Nahm coordinates については \(m\ne 1\) で degree bound \(2\)、\(m=1\) で bound \(4\) を得る。後者では最初の二つの asymptotic corrections が本質的に使われる。</p>
+<h3>数学的関連性</h3>
+<p>Nahm sums の modularity を「候補を列挙して確認する」問題から、Nahm point の algebraic degree に対する一様な制約へ変換している点が重要である。特に modularity が radial asymptotics の高次補正項の消滅を強制し、その消滅条件が algebraic geometry と Newton polygon による有限的な制約へ落ちる構造は、Nahm 型 \(q\)-series の modularity obstruction を系統化する方法を与える。</p>
+<p>Bloch group が特殊場合の degree bound を強化する点も重要で、Nahm equations、dilogarithm identities、modularity の間にある既知の関係を、数体の次数という具体的な不変量に反映している。Quantum modularity を直接扱う論文ではないが、modular Nahm sums の classification や modular/non-modular の境界を研究する上で直接的な入力になる。</p>
+<h2>3. Exact Recovery for Non-Abelian Surface Codes</h2>
+<p><strong>Authors:</strong> Alison Warman, Nathanan Tantivasadakarn, Sakura Schafer-Nameki</p>
+<p><strong>Link:</strong> https://arxiv.org/abs/2610.03677</p>
+<h3>概要</h3>
+<p>任意の有限群 \(G\) の quantum double \(D(G)\) に基づく non-Abelian topological surface codes に対して、exact deterministic recovery protocol を構成する。まず group multiplication operators と irreducible representation operators からなる orthogonal error basis を与える。Closed loops 上に support を持つ誤りでは stabilizer に由来する冗長性が生じるため、gauge-fixing によって code space 上の complete orthogonal error basis を得る。</p>
+<p>そのうえで、あらかじめ neutral かつ correctable と分かっている error clusters を入力として、charge と flux を ancilla に移送する回路を構成し、ancilla を projection で除去することで誤りを正確に回復する。この方法は Abelian 群に限定されず、任意の有限 non-Abelian group に適用される。</p>
+<h3>数学的関連性</h3>
+<p>有限群の quantum double \(D(G)\) の表現圏は、conjugacy classes と centralizer representations によって記述される anyon sectors を持ち、fusion と braiding を備える。したがって surface-code の誤り訂正という応用的設定であっても、背後にある代数は finite-group 由来の modular tensor category と密接に結び付いている。</p>
+<p>これは untwisted Dijkgraaf-Witten 型の \(2+1\) 次元 topological field theory と同じ categorical data に接続するため、3次元量子トポロジーの観点からは、modular data を lattice operators と具体的な charge/flux transport に落とした実現とみなせる。3-manifold invariant 自体を計算する論文ではないが、finite-group TQFT における line operators、fusion、braiding の具体化として数学的に近い。</p>
+<h2>4. Nahm-Kirchhoff Moduli Spaces, Hyperkähler Quotient and 2D Field theories</h2>
+<p><strong>Author:</strong> Mohamed Moussadek Maiza</p>
+<p><strong>Link:</strong> https://arxiv.org/abs/2610.03384</p>
+<h3>概要</h3>
+<p>境界を持つ oriented quiver \(\Gamma\) と compact connected Lie group \(G\) に対し、各 edge 上で Nahm equations を満たし、interior vertices で Kirchhoff 型 matching conditions を満たす解を gauge transformations で割った Nahm-Kirchhoff moduli space \(\mathcal{M}_{\mathbb{H}}(\Gamma)\) を導入する。</p>
+<p>Connected \(\Gamma\) に対して</p>
+<div class="math">\[\dim \mathcal{M}_{\mathbb{H}}(\Gamma)
+=
+4\bigl(|E|-|\Gamma_{\mathrm{int}}|\bigr)\dim G\]</div>
+<p>を示し、無限次元 hyperkähler quotient として hyperkähler structure を構成する。さらに Kempf-Ness argument により、complex Nahm equations の解の complexified gauge quotient \(\mathcal{M}_{\mathbb{C}}(\Gamma)\) と同一視する quiver analogue of Donaldson's theorem を与える。後者は</p>
+<div class="math">\[(T^*G_{\mathbb{C}})^E\]</div>
+<p>の有限次元 complex-symplectic quotient として記述される。</p>
+<p>Cutting and gluing によって \(\Gamma\mapsto\mathcal{M}_{\mathbb{C}}(\Gamma)\) は complex Hamiltonian manifolds に値を取る 2D TQFT を与える。一方、hyperkähler metric は edge lengths に依存するため単純な subdivision では不変でないが、metric data を保持すると metric cobordisms 上の field theory として functoriality が回復する。</p>
+<h3>数学的関連性</h3>
+<p>ここでの Nahm equations は Nahm sums の方程式とは別物だが、quiver、Hamiltonian reduction、moduli spaces、cutting/gluing が一つの構成に統合されている点が重要である。特に edgewise local data を vertex matching で貼り合わせ、有限次元 symplectic quotient に還元する構造は、quiver varieties、character varieties、Moore-Tachikawa 型 TQFT の共通形式と比較できる。</p>
+<p>また、complex-symplectic structure は combinatorial subdivision に対して安定である一方、hyperkähler metric は edge length を記憶するという差が明確に現れる。Cluster/symplectic moduli spaces で座標変換により保たれる代数的・Poisson 的情報と、追加の metric data に依存する幾何を分離して理解する上でも興味深いモデルになっている。</p>
+<h2>5. A novel extension of the canonical 2+1-dimensional Dym equation. Moving boundary problems solvable via Painleve' II Reduction</h2>
+<p><strong>Authors:</strong> Colin Rogers, Sandra Carillo</p>
+<p><strong>Link:</strong> https://arxiv.org/abs/2610.02927</p>
+<h3>概要</h3>
+<p>Konopelchenko-Dubrovsky による canonical \(2+1\) dimensional solitonic Dym equation に temporal modulation を導入した拡張を構成し、その symmetry reduction を調べる。特に Painlevé II reduction を用いることで、対応する \(2+1\) 次元 nonlinear moving-boundary problems の一クラスに exact solutions を与える。境界値問題は generalized Stefan-type problem として記述される。</p>
+<p>中心的な機構は、integrable PDE の symmetry reduction が Painlevé II equation を生み、その特殊解を使って moving boundary の位置と場の時間発展を同時に記述することである。</p>
+<h3>数学的関連性</h3>
+<p>これは \(q\)-Painlevé equation ではなく classical Painlevé II を扱う論文であるが、integrable PDE から Painlevé equation が reduction によって現れる典型的な機構を具体化している。Painlevé equations を isomonodromic systems や discrete integrable systems から得る場合とは出発点が異なるため、どの構造が reduction に依存し、どの構造が Painlevé 方程式固有のものかを比較する材料になる。</p>
+<p>特に Dym-type equation の higher-dimensional integrable structure と Painlevé reduction の関係は、continuous hierarchy と discrete/\(q\)-difference Painlevé systems の対応を考える際の古典側の参照例として有用である。</p></body></html>
