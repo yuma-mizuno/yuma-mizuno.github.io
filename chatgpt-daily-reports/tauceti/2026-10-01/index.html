@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tau Ceti ReductiveGroups roadmap - 2026-10-01</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;line-height:1.75;max-width:980px;margin:0 auto;padding:32px 20px;color:#202124;background:#fff}
+h1,h2,h3{line-height:1.3;margin-top:1.6em} h1{font-size:2rem;border-bottom:1px solid #ddd;padding-bottom:.35em} h2{font-size:1.45rem;border-bottom:1px solid #eee;padding-bottom:.25em}
+a{color:#0969da;text-decoration:none} a:hover{text-decoration:underline} code{background:#f6f8fa;padding:.15em .35em;border-radius:4px;font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+blockquote{border-left:4px solid #d0d7de;margin:1em 0;padding:.25em 1em;color:#57606a} li{margin:.35em 0}.math{overflow-x:auto;margin:1em 0}
+@media(max-width:600px){body{padding:20px 14px}h1{font-size:1.55rem}h2{font-size:1.25rem}}
+</style>
+<script>MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head><body><h1>Tau Ceti ReductiveGroups roadmap 日次進捗 - 2026-10-01</h1>
+<p>対象期間: <strong>2026-09-30 09:00 → 2026-10-01 09:00 (Europe/Dublin)</strong>。 この期間に確認した <strong>roadmap-relevant substantive changes は24件</strong>。中心は <strong>Layer 3 の quotient / exact-sequence machinery</strong> と <strong>Layer 9 の root-generated explicit carriers</strong> です。</p>
+<h2>1. 今回前進した roadmap target</h2>
+<h3>Layer 3: fppf quotient と short exact sequence の categorical interface が大幅に前進</h3>
+<p>この期間には normal subgroup quotient の周辺が連続して整備されました。</p>
+<ul>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10171">#10171</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/4d62fcdaee9f40e446dda7944c411a3710f07fbc"><code>4d62fcd</code></a>: affine group morphism の kernel pair を Hopf coordinates で同定。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10113">#10113</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/e691b955f37690becab62a6aa25ee82bbfe2062e"><code>e691b95</code></a>: coinvariant algebra からの canonical map の surjectivity。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10142">#10142</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/1be7c7eb9797d9613021eccf33a67f05c9c25d89"><code>1be7c7e</code></a>: faithfully flat kernel に対する coinvariants を target coordinate ring と同定。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10221">#10221</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/284e1bd6fac92053e2d1abcffc584f5cafe7188d"><code>284e1bd</code></a>: affine-group morphism の finiteness を kernel で検出。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10252">#10252</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/035a1d71a0dcb3f43be8a7d3339ac1ad8e5b158d"><code>035a1d7</code></a>: flatness を identity fibre で検出する criterion。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10233">#10233</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/54fd951cac12f34f12d874bb821aefff39837262"><code>54fd951</code></a>: dominant affine-group morphism の geometric points 上の surjectivity。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10276">#10276</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/5cc986643fe6cecbaf656e7c9e68211c3fcffc00"><code>5cc9866</code></a>: injective Hopf map の prime spectra 上の surjectivity。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10282">#10282</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/af6e8db116f6ba9c6a1351bdc3bbec81306d7a53"><code>af6e8db</code></a>: affine-group morphisms の kernel exact sequence。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10336">#10336</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/4f409e87be117e94a09fd923874eef34216e9a92"><code>4f409e8</code></a>: reduced target への finite dominant morphism の faithful flatness。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10378">#10378</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/b58427135449836f70f19bcfc50f33e43e209e3f"><code>b584271</code></a>: coinvariants 上の faithful flatness の descent。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10230">#10230</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/dae39d83c716b5eaa93c45f0a3693fb5b445dc94"><code>dae39d8</code></a>: coinvariant algebra の flat base change compatibility。</li>
+</ul>
+<p>fppf sheaf quotient 側では、</p>
+<ul>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10357">#10357</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/4b6501a1ba8d63f4a6fd3f3b42ac36adb7884a19"><code>4b6501a</code></a>: normal subgroup が fppf quotient projection の categorical kernel であること。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10364">#10364</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/16084aced7db639f9883a17465a859ab1ab175f6"><code>16084ac</code></a>: projection が subgroup inclusion の categorical cokernel であること。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10393">#10393</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/f881c3329f5fa0a67714188fb68278cddeb9ffb8"><code>f881c33</code></a>: Hopf coordinates で short exact sequence</li>
+</ul>
+<div class="math">\[  1	o N	o G	o Q	o1\]</div>
+<p>を package。</p>
+<ul>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10396">#10396</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/db30d93a1cfeb266e2d83b526f6395738d345b6d"><code>db30d93</code></a>: finite dominant morphism で geometrically reduced target を持つ場合、target が kernel の fppf quotient を represent することを任意の field 上で証明。</li>
+</ul>
+<p>これにより Layer 3 は「abstract fppf quotient sheaf」から <strong>kernel/cokernel exactness + 重要な representable case</strong> へ進みました。一般 normal subgroup quotient の representability はまだ残ります。</p>
+<h3>Layer 7: (Sp_{2m}) の Weyl group comparison が完成</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/10353">PR #10353</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/34b4949da5fec637bf5d6bac2164c7ae89d99ca2"><code>34b4949</code></a> は paired diagonal torus (Tsubset Sp_{2m}) の rational-point normalizer quotientを計算し、</p>
+<div class="math">\[N(T)(k)/T(k)simeq operatorname{Sym}(mathrm{Bool})wr S_m
+simeq W(C_m)\]</div>
+<p>と同定しました。long-root representatives は sign change、short-root representatives は coordinate transposition に対応します。</p>
+<p>これは (Sp) worked example の <strong>actual normalizer quotient と abstract root-datum Weyl group の bridge</strong> の completion です。scheme-theoretic normalizer quotient の representability theoremではありません。</p>
+<h3>Layer 9: explicit carriers が root-generated group schemes へ</h3>
+<p>root-generation の scheme-level equality が複数 type で進みました。</p>
+<ul>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10324">#10324</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/de93c4edc2fcab15cab3f8dace881ea946ff6acf"><code>de93c4e</code></a>: short-root (G_2) carrier。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10347">#10347</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/08f936f91273891e325ad8473f5df756df88fa18"><code>08f936f</code></a>: tripled (D_4) と doubled (E_6) carrier。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10352">#10352</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/d14932a83ad6f6e9112a358e18a388ae2f09ce0f"><code>d14932a</code></a>: (E_6) minuscule carrier。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10370">#10370</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/fd91310b280147c88a22a233eba76e9fe53afa5c"><code>fd91310</code></a>: short-root (F_4) carrier。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10424">#10424</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/48b655b5d9ef6cce80b8f2e5616d694ac74b66d7"><code>48b655b</code></a>: prime-field short-root (G_2/F_4) carriers。</li>
+</ul>
+<p>この結果、これら explicit toral closures について auxiliary weight torus を別 generator として加えなくても、numbered root subgroups の <strong>closed generated subgroup scheme</strong> と一致することが確認されました。</p>
+<h3>Layer 9: geometric recognition と exceptional endomorphisms</h3>
+<ul>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/9479">#9479</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/e10361c415e06b367bf5658bcab6b9e7d7df7458"><code>e10361c</code></a>: generated (E_6) subgroupの smoothness。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10214">#10214</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/3553795f7c1902251d1618db15d3428b14c96c2f"><code>3553795</code></a>: (E_7) minuscule carrier の scalar-extension package。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10255">#10255</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/ea6fe4a7aaab49f46c589b746afd5f4e98763638"><code>ea6fe4a</code></a>: (G_2/F_4) exceptional endomorphisms の finiteness。</li>
+</ul>
+<h2>2. 完成した endpoint</h2>
+<ol>
+<li>fppf quotient projection の kernel / cokernel universal properties。</li>
+<li>affine groups の short exact sequence interface。</li>
+<li>finite dominant kernel quotient の representability（geometrically reduced finite-type target）。</li>
+<li>(Sp_{2m}) rational-point Weyl quotient (=W(C_m))。</li>
+<li>(G_2,F_4,D_4,E_6) など explicit carriers の root-generated scheme equality。</li>
+</ol>
+<h2>3. roadmap を支える reusable infrastructure</h2>
+<p>coinvariants, faithful flatness, kernel pairs, spectral surjectivity, short exact sequencesが一つの quotient packageとして揃いました。Layer 3 の一般 representability theoremと Layer 6 の central quotientに直接再利用できます。</p>
+<h2>4. 重要な refactor / maintenance / CI</h2>
+<p>今回の substantive items は多いですが、中心は新 theorem / API であり、単なる rename / module move は件数に含めていません。</p>
+<h2>5. 現在の open gaps / blockers</h2>
+<ul>
+<li><strong>Layer 3:</strong> arbitrary closed normal subgroupの fppf quotient representability。coinvariant algebraの finite generation / faithful flatness / prescribed kernel recoveryの一般形。</li>
+<li><strong>Layer 6:</strong> center quotient (G/Z(G)) の representability と adjoint-form identification。</li>
+<li><strong>Layer 7:</strong> scheme-theoretic normalizer quotientの一般 theory、Borel/maximal torus conjugacyの一般 reductive-group theorem。</li>
+<li><strong>Layer 9:</strong> root-generated equalityは多くの carriers で完成。次は smooth/reductive/root-datum recognition と uniform pinned Chevalley-Demazure isomorphism。</li>
+</ul></body></html>
