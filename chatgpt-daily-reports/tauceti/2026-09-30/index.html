@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tau Ceti ReductiveGroups roadmap - 2026-09-30</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;line-height:1.75;max-width:980px;margin:0 auto;padding:32px 20px;color:#202124;background:#fff}
+h1,h2,h3{line-height:1.3;margin-top:1.6em} h1{font-size:2rem;border-bottom:1px solid #ddd;padding-bottom:.35em} h2{font-size:1.45rem;border-bottom:1px solid #eee;padding-bottom:.25em}
+a{color:#0969da;text-decoration:none} a:hover{text-decoration:underline} code{background:#f6f8fa;padding:.15em .35em;border-radius:4px;font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+blockquote{border-left:4px solid #d0d7de;margin:1em 0;padding:.25em 1em;color:#57606a} li{margin:.35em 0}.math{overflow-x:auto;margin:1em 0}
+@media(max-width:600px){body{padding:20px 14px}h1{font-size:1.55rem}h2{font-size:1.25rem}}
+</style>
+<script>MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head><body><h1>Tau Ceti ReductiveGroups roadmap 日次進捗 - 2026-09-30</h1>
+<p>対象期間: <strong>2026-09-29 09:16頃 → 2026-09-30 09:00 (Europe/Dublin)</strong>。 この期間に確認した <strong>roadmap-relevant substantive changes は15件</strong>。</p>
+<h2>1. 今回前進した roadmap target</h2>
+<h3>Layer 4: torus と Galois lattice の dictionary が cocharacter 側まで完成</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/9196">PR #9196</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/5087d6fbd0eae865b214f7dd43eaa6e8553532b6"><code>5087d6f</code></a> は、perfect field 上の torus に対して character lattice と cocharacter lattice の双対性を formalize し、既存の character classification を cocharacter functor へ移しました。これにより Layer 4 の torus lattice dictionary について、split/non-split torus の character/cocharacter pairing と分類が一つの体系になりました。</p>
+<p>残る主な gap は imperfect field への拡張です。</p>
+<h3>Layer 6: central isogeny の descent が完成</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/9183">PR #9183</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/2b90552d1ca4d3f4e981c91c4218396c6f759dd1"><code>2b90552</code></a> は、faithfully flat base change が isogeny を保存・反映し、field extension が central isogeny を保存・反映することを証明しました。kernel Hopf ideal の scalar extension compatibilityも入り、非既約な scheme-theoretic kernel を含めて centrality を追跡できます。</p>
+<p>これは Layer 6 の simply connected / adjoint forms を algebraic closure 上で比較するための基盤です。</p>
+<h3>Layer 7: (SL_{n+1}) の標準 BN-pair / Tits system</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/10091">PR #10091</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/c12a0da9082e77769eec79f7db63416b32b88ec5"><code>c12a0da</code></a> は、Tits system の pullback construction を一般化し、それを (SL_{n+1}(k)	o GL_{n+1}(k)) に適用して標準 Tits system を構成しました。</p>
+<p>したがって (SL_{n+1}(k)) に対しても既存の Bruhat cell / exchange condition / Weyl group machinery を利用できます。一般 split reductive group の BN-pair はまだ未完成です。</p>
+<h3>Layer 6: comodule representation の微分</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/9227">PR #9227</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/60bdcaf48367b30769db1e19eabc71d1bb641a6e"><code>60bdcaf</code></a> は rational comodule representation を tangent Lie algebra の representation へ微分する一般 construction を追加しました。Layer 6 の characteristic-zero</p>
+<div class="math">\[	ext{reductive}Longrightarrow	ext{linearly reductive}\]</div>
+<p>に必要な group representation と Lie algebra representation の bridge です。</p>
+<h3>Layer 9: explicit carriers の root-generated scheme identification</h3>
+<p>この期間には carrier generation が大きく進みました。</p>
+<ul>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10185">#10185</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/bd0e54377b889f247668386caa637d05e7976efa"><code>bd0e543</code></a>: full-weight type (B) / (D) spin carriers が positive/negative simple-root subgroups だけで <strong>scheme-theoretically generated</strong> されることを証明。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10115">#10115</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/3c54396dac499acc086c6bc67ce543ad365b5ad6"><code>3c54396</code></a>: (E_7) minuscule carrier について同じ root-generated closed subgroup scheme との同一視を完成。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/9955">#9955</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/11420e515a5ad71f62b218851719bb1c383924ff"><code>11420e5</code></a>: (E_7) simple-root commutation relations を追加。</li>
+</ul>
+<p>これらは以前の pointwise な「weight torus は elementary subgroup に入る」から、defining Hopf ideal の equality を使う <strong>scheme-level generation</strong> へ進んだ点が重要です。</p>
+<h3>Layer 9: generated carrier の smoothness / connectedness</h3>
+<p>explicit carrier を reductive group scheme と認識するための geometric input も進みました。</p>
+<ul>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/9875">#9875</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/163ce800f7f3b5089428c699474f28f877d6759b"><code>163ce80</code></a>: doubled (E_6) generated subgroup の connectedness。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/9866">#9866</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/6e3d32855d42cc453547b61f740fa2bd004a248e"><code>6e3d328</code></a>: generated (F_4) subgroup の connectedness。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/9939">#9939</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/f619834fc968915b6d086177154f4f0f398a2201"><code>f619834</code></a>: generated (E_7) minuscule subgroup の connectedness。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/9960">#9960</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/1449cecd1853c492f21530ce8e714f878b3e441c"><code>1449cec</code></a>: generated type (D_n) spin subgroup の smoothness + connectedness。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10043">#10043</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/165a962f018e4b47bc69e0c547205e8ad1875a61"><code>165a962</code></a>: generated type (B_{n+1}) spin subgroup の smoothness + connectedness。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/9988">#9988</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/ae9c96c9bf4dc771d62e995e5bcec0e47c5e8898"><code>ae9c96c</code></a>: generated (E_6) minuscule subgroup の smoothness + connectedness。</li>
+</ul>
+<h3>Layer 7: rank-one Borel conjugacy</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/9849">PR #9849</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/877ad3ae1a4bc052458bbd1b7957cd6c99e04457"><code>877ad3a</code></a> で (SL_2) の Borel subgroups の conjugacy が formalize されました。一般 rank の (SL_n) / 一般 reductive group の Borel conjugacy はまだ後続です。</p>
+<h3>Layer 4 / 6: finite diagonalizable kernels</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/9187">PR #9187</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/e4fbcd0bbe91235af317e62645d0fbc36ea42923"><code>e4fbcd0</code></a> は finite diagonalizable kernel の connectedness を character-group 側で特徴づけました。central isogeny と multiplicative-type kernel の解析に直接使う input です。</p>
+<h2>2. 完成した endpoint</h2>
+<p>今回の明確な completion は次の通りです。</p>
+<ol>
+<li>perfect field 上の torus cocharacter-lattice classification (#9196)。</li>
+<li>central isogeny の field-extension descent / reflection (#9183)。</li>
+<li>(SL_{n+1}) の標準 Tits system (#10091)。</li>
+<li>type (B/D) spin carriers と (E_7) carrier の root-generated <strong>group scheme</strong> identification (#10185, #10115)。</li>
+<li>複数 explicit carrier で smoothness / connectedness package が完成。</li>
+</ol>
+<h2>3. roadmap を支える reusable infrastructure</h2>
+<p>#9227 の comodule differential は characteristic-zero reductive (Rightarrow) linearly reductive のための共通 bridgeです。#10091 の Tits-system pullback は (SL) 以外の subgroupにも再利用可能です。#9183 の faithfully-flat descent API は central isogeny / nonsplit forms 全般で使えます。</p>
+<h2>4. 重要な refactor / maintenance / CI</h2>
+<p>この期間には Mathlib bump <a href="https://github.com/TauCetiProject/TauCeti/pull/9799">#9799</a> など repository-wide maintenance もありましたが、上の substantive 件数には含めていません。</p>
+<h2>5. 現在の open gaps / blockers</h2>
+<ul>
+<li><strong>Layer 4:</strong> torus lattice classification の imperfect-field extension。</li>
+<li><strong>Layer 6:</strong> characteristic zero の (	ext{reductive}Rightarrow	ext{linearly reductive})。#9227 により differential bridge は完成したが、reductive Lie algebra の complete reducibility と group-stable / Lie-stable comparison が残る。</li>
+<li><strong>Layer 7:</strong> Borel conjugacy は (SL_2) のみ。一般 (SL_n) / classical groups / general reductive group が残る。</li>
+<li><strong>Layer 9:</strong> root-generated equality は (B/D/E_7) で scheme-level に到達したが、smoothness・reductivity・root datum・uniform pinned Chevalley-Demazure groupとの identification が次の共通 frontier。</li>
+</ul></body></html>
