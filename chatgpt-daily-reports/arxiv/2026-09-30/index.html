@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>arXiv math/new report - 2026-09-30</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;line-height:1.75;max-width:980px;margin:0 auto;padding:32px 20px;color:#202124;background:#fff}
+h1,h2,h3{line-height:1.3;margin-top:1.6em}h1{font-size:2rem;border-bottom:1px solid #ddd;padding-bottom:.35em}h2{font-size:1.45rem;border-bottom:1px solid #eee;padding-bottom:.25em}
+a{color:#0969da;text-decoration:none}a:hover{text-decoration:underline}code{background:#f6f8fa;padding:.15em .35em;border-radius:4px;font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+blockquote{border-left:4px solid #d0d7de;margin:1em 0;padding:.25em 1em;color:#57606a}li{margin:.35em 0}.math{overflow-x:auto;margin:1em 0}hr{border:0;border-top:1px solid #ddd;margin:2em 0}
+@media(max-width:600px){body{padding:20px 14px}h1{font-size:1.55rem}h2{font-size:1.25rem}}
+</style>
+<script>MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head><body><h1>arXiv math/new report - 2026-09-30</h1>
+<blockquote><strong>Fallback reconstruction from current metadata</strong><br><br>arXiv の math/new 直リンクについて、現在利用できる取得結果が 2026-08-10 の古いキャッシュを返しており、2026-09-30 時点の aggregate page の <strong>exact header line</strong> と <strong>New submissions の正確な総数</strong>は独立に検証できませんでした。<br><br>一方、current arXiv mirrors は <strong>Wed, 30 Sep 2026</strong> の listing を確認でき、以下で採用した各論文については個別 metadata が <strong>Submitted September 29, 2026 / Last Updated September 30, 2026</strong> であることを照合しています。したがって、このレポートでは aggregate count を推測せず、当日の new-submission 相当を individual metadata から復元しています。</blockquote>
+<p>今日の listing では、cluster algebra および \(q\)-Painlevé を直接主題とする強いヒットは確認できませんでした。一方、\(q\)-series / modular forms、Temperley--Lieb・tangle categories、quiver geometry、higher categorical formalism、flag geometry にかなり近い論文が複数あります。以下の 7 件を選びます。</p>
+<h2>1. Congruences for the Andrews--Uncu partition function \(\mathcal{EO}_u(n)\)</h2>
+<p><strong>Authors:</strong> Nayandeep Deka Baruah, Hirakjyoti Das, Manjil P. Saikia, Abhishek Sarma</p>
+<p><strong>Link:</strong> https://arxiv.org/abs/2609.37920</p>
+<h3>概要</h3>
+<p>Andrews の partition function \(\mathcal{EO}(n)\) のうち、even parts に repetition を許さない部分を数える \(\mathcal{EO}_u(n)\) に対して、\(2\) の冪を法とする複数の合同式を証明します。さらに無限族の congruences と recurrence relation を与えます。</p>
+<p>証明には elementary な generating-function manipulations、algorithmic methods、modular-form techniques が併用されています。したがって、単なる個別の partition congruence ではなく、partition generating function の arithmetic structure を modular forms によって制御するタイプの結果です。</p>
+<h3>数学的関連</h3>
+<p>\(q\)-series、partition identities、modular forms の交点にあるため、今日の新着の中では quantum modularity 周辺に最も近い論文です。特に</p>
+<div class="math">\[\text{partition generating function}
+\longrightarrow
+\text{modular-form structure}
+\longrightarrow
+\text{infinite congruence families}\]</div>
+<p>という流れは、Rogers--Ramanujan 型恒等式や Nahm-sum 型 \(q\)-series の算術的性質と比較しやすい構造です。合同式の証明手法が、product formula を持つ \(q\)-series の modular arithmetic を調べる際にどこまで移植できるかが興味深い点です。</p>
+<h2>2. Idempotents in the Temperley-Lieb Monoid and Other Categories</h2>
+<p><strong>Author:</strong> Louis H. Kauffman</p>
+<p><strong>Link:</strong> https://arxiv.org/abs/2609.34282</p>
+<h3>概要</h3>
+<p>identity morphism の factorization から生じる idempotents を、Temperley--Lieb monoid の planar diagrammatics を使って記述します。Temperley--Lieb monoid の idempotents と meanders の間の対応を解析し、同様の構造を Brauer monoid、tangle monoid、tangle category に拡張します。</p>
+<p>中心的な視点は、代数的な idempotent condition を planar curves の組合せ論へ翻訳することです。これにより、factorization of identity と diagram composition の関係が非常に具体的になります。</p>
+<h3>数学的関連</h3>
+<p>Temperley--Lieb category は braid groups、Jones-type constructions、quantum \(\mathfrak{sl}_2\) representation theory、skein theory の基本的 diagram category です。ここで扱われる</p>
+<div class="math">\[\text{factorization of }1
+\quad\leftrightarrow\quad
+\text{idempotent}
+\quad\leftrightarrow\quad
+\text{planar meander data}\]</div>
+<p>という対応は、diagrammatic categories の内部構造を combinatorial geometry から理解する例です。</p>
+<p>特に tangle category まで同じ機構を追っているため、braid/tangle operations を algebraic or categorical moduli と結び付ける場面で、どの構造が diagrammatics の段階ですでに決まっているかを見るためのよいモデルになります。</p>
+<h2>3. Structure and Representations of a Diagrammatic Non-Commutative Tangloid Algebra</h2>
+<p><strong>Authors:</strong> Hadeel B. Albeladi, Sofia Lambropoulou</p>
+<p><strong>Link:</strong> https://arxiv.org/abs/2609.37524</p>
+<h3>概要</h3>
+<p>Turaev の knotoid theory に動機づけられた tangloid category から、non-commutative tangloid algebra \(\mathcal T_n\) と braidoid subalgebra \(\mathcal B_n\) を構成します。</p>
+<p>unoriented welded tangleoid category から welded relation を外し、forbidden moves と追加 relations を組み込んだ category を出発点とします。さらに placeholder morphism を加えた extended tangloid category を導入し、その fixed \(n\)-box の endomorphism algebra を線形化して \(\mathcal T_n\) を定義します。</p>
+<p>また trivial knot / knotoid components に対する reduction relations を加えた reduced tangloid algebra と、reflection・composition・closure を使う diagrammatic bilinear pairing を構成します。</p>
+<h3>数学的関連</h3>
+<p>braids、tangles、knotoids、diagram algebras の関係を一つの categorical algebra にまとめている点が重要です。braidoid が tangloid category の subcategory / subalgebra として自然に出るため、</p>
+<div class="math">\[\text{braid-like objects}
+\subset
+\text{tangle-like objects}
+\longrightarrow
+\text{endomorphism algebra}\]</div>
+<p>という階層が明確です。</p>
+<p>braid varieties や weave のように braid combinatorics から幾何・代数構造を作る枠組みと直接同じものではありませんが、「diagram operation を endomorphism algebra として組織化する」という設計原理は比較対象としてかなり近いです。</p>
+<h2>4. On the Hilbert polynomial of the linked projective space</h2>
+<p><strong>Authors:</strong> Felipe De León, Eduardo Esteves, Eduardo Vital</p>
+<p><strong>Link:</strong> https://arxiv.org/abs/2609.37634</p>
+<h3>概要</h3>
+<p>linked projective spaces を、特定の quiver representations に対する 1-dimensional subspaces の quiver Grassmannians として扱います。これらは degenerations of linear series から自然に生じ、limit divisors を parameterize します。</p>
+<p>主結果は、linked projective space が projective spaces の積における small diagonal と同じ multivariate Hilbert polynomial を持つことです。そのために、</p>
+<ol>
+<li>multiplicity-free strata をもつ simple normal-crossings schemes の Hilbert polynomial formula を与える、</li>
+<li>linked projective spaces が Mustafin varieties を用いた局所記述から normal-crossings であることを示す、</li>
+<li>components の intersections と simplex tiling の polytopes を対応させる、</li>
+</ol>
+<p>という段階を踏みます。</p>
+<h3>数学的関連</h3>
+<p>quiver Grassmannians と degenerations of geometric moduli が明示的に結び付く論文です。quiver から得られる幾何空間について、</p>
+<div class="math">\[\text{quiver representation}
+\longrightarrow
+\text{quiver Grassmannian}
+\longrightarrow
+\text{normal-crossing degeneration}
+\longrightarrow
+\text{Hilbert polynomial}\]</div>
+<p>という幾何的な辞書が得られています。</p>
+<p>cluster geometry そのものではありませんが、quiver data から moduli を作り、その degeneration・stratification・intersection combinatorics を解析するという意味で、cluster varieties や flag-type moduli と近い問題設定です。</p>
+<h2>5. Six functor formalisms via internal higher algebra</h2>
+<p><strong>Authors:</strong> Shachar Carmeli, Guy Kapon, Noam Nissan</p>
+<p><strong>Link:</strong> https://arxiv.org/abs/2609.37520</p>
+<h3>概要</h3>
+<p>six-functor formalism</p>
+<div class="math">\[D:\operatorname{Span}(C,E)\to\operatorname{Cat}\]</div>
+<p>を \((\infty,2)\)-categorical な lax symmetric monoidal functor へ拡張します。\(D\)-proper morphisms と \(D\)-étale morphisms の classes を用い、Mann の conjecture を証明するとともに、Cnossen--Lenz--Linskens の結果の特殊例を一般化します。</p>
+<p>証明のために、\(\infty\)-topos 内の local class \(\mathsf E\) に対する internal \(\mathsf E\)-monoidal categories と \(\mathsf E\)-operads の理論を発展させます。</p>
+<h3>数学的関連</h3>
+<p>extended TQFT や sheaf-theoretic constructions で頻出する「functoriality の複数方向」を higher categorical に統一する枠組みです。six operations を単に個別の adjunction としてではなく、\((\infty,2)\)-categorical span formalism の一部として組織化している点が核心です。</p>
+<p>higher categories、TQFT、geometric representation theory の formalism を比較する際に、どの coherence が自動的に得られ、どこが additional structure なのかを整理する基盤として有用です。</p>
+<h2>6. On topologically transitive subsets of flag manifolds</h2>
+<p><strong>Authors:</strong> Subhadip Dey, Sami Douba, Konstantinos Tsouvalas</p>
+<p><strong>Link:</strong> https://arxiv.org/abs/2609.37752</p>
+<h3>概要</h3>
+<p>higher-rank Lie groups の Anosov subgroups が flag manifolds 上で作用するとき、通常の Anosov limit set 以外の部分集合上で現れる topological dynamics を解析します。</p>
+<p>strictly convex domain を dividing する projective transformation group が ellipsoid stabilizer と Zariski-dense に交わる場合、domain complement に dense orbit を持ち、domain に tangent な full projective flags の空間上で minimally acting することを示します。</p>
+<p>また、partial flag manifold では Anosov でありながら、Furstenberg boundary の Benoist--Guivarc'h limit set から Anosov limit set への equivariant projection が fibration にならない Zariski-dense examples も構成します。</p>
+<h3>数学的関連</h3>
+<p>flag manifolds、higher-rank groups、Anosov representations、homogeneous dynamics の接点にあります。特に full flags と partial flags の間の projection が topologically 単純でない現象を具体化しており、</p>
+<div class="math">\[G/P_{\min}\longrightarrow G/P\]</div>
+<p>のような flag projection が dynamics をどの程度保持するかという問題を扱っています。</p>
+<p>flag configurations や flag moduli を幾何的に用いる場面では、algebraic quotient / projection と dynamical boundary data の違いを理解するための有用な比較対象です。</p>
+<h2>7. Characteristic-free Knörrer periodicity</h2>
+<p><strong>Author:</strong> Graham J. Leuschke</p>
+<p><strong>Link:</strong> https://arxiv.org/abs/2609.37839</p>
+<h3>概要</h3>
+<p>complete hypersurface ring</p>
+<div class="math">\[R=S/(f)\]</div>
+<p>とその hyperbolic extension</p>
+<div class="math">\[A=S[\![u,v]\!]/(f+uv)\]</div>
+<p>に対して、Knörrer functor が maximal Cohen--Macaulay modules の stable categories の equivalence</p>
+<div class="math">\[\operatorname{MCM}(R)\simeq \operatorname{MCM}(A)\]</div>
+<p>を与えることを、residue characteristic に仮定を置かず証明します。isolated singularity assumption も不要で、\(S\) が field を含む必要もありません。</p>
+<p>一方、</p>
+<div class="math">\[R^{\sharp\sharp}=S[\![z,w]\!]/(f+z^2+w^2)\]</div>
+<p>による iterated double branched cover は characteristic \(2\) では同じ periodicity を持たないことを明確にします。</p>
+<h3>数学的関連</h3>
+<p>stable categories、matrix-factorization 型現象、hypersurface singularities と branched-cover constructions の関係を characteristic-free に整理した結果です。</p>
+<p>特に \(f+uv\) による hyperbolic stabilization と \(f+z^2+w^2\) による iterated double branched cover の差が characteristic \(2\) で可視化されるため、「branched cover が invariant/category をどのように変えるか」という問題の代数幾何版として非常に明瞭です。</p>
+<h2>まとめ</h2>
+<p>今日の直接ヒットとして最も強いのは、\(q\)-series / modular arithmetic 側では <strong>Andrews--Uncu partition function の congruences</strong>、diagrammatic topology / quantum algebra 側では <strong>Temperley--Lieb idempotents</strong> と <strong>tangloid algebra</strong> です。</p>
+<p>さらに、quiver Grassmannian と degeneration を扱う linked projective spaces、six-functor formalism の higher categorical organization、flag manifolds 上の Anosov dynamics も、cluster・flag・higher-category 周辺に接続する新着として注目できます。</p>
+<p>cluster algebra および \(q\)-Painlevé を直接主題とする September 29 submissions は、今回確認した current metadata からは強い候補を確認できませんでした。</p>
+<hr>
+<h3>取得上の注記</h3>
+<p>arXiv 本体の https://arxiv.org/list/math/new は現在の取得環境では 2026-08-10 の古い snapshot を返しており、2026-09-30 の aggregate <strong>exact header</strong> と <strong>new-submission total</strong> は検証不能でした。</p>
+<p>そのため本レポートは、current mirrors が示す <strong>Wed, 30 Sep 2026</strong> listing と、各論文について個別に確認した <strong>Submitted September 29, 2026</strong> metadata を使って構成しています。aggregate count については推測値を記載していません。</p></body></html>
