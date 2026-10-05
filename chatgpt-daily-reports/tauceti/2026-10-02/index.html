@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tau Ceti ReductiveGroups roadmap - 2026-10-02</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;line-height:1.75;max-width:980px;margin:0 auto;padding:32px 20px;color:#202124;background:#fff}
+h1,h2,h3{line-height:1.3;margin-top:1.6em} h1{font-size:2rem;border-bottom:1px solid #ddd;padding-bottom:.35em} h2{font-size:1.45rem;border-bottom:1px solid #eee;padding-bottom:.25em}
+a{color:#0969da;text-decoration:none} a:hover{text-decoration:underline} code{background:#f6f8fa;padding:.15em .35em;border-radius:4px;font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+blockquote{border-left:4px solid #d0d7de;margin:1em 0;padding:.25em 1em;color:#57606a} li{margin:.35em 0}.math{overflow-x:auto;margin:1em 0}
+@media(max-width:600px){body{padding:20px 14px}h1{font-size:1.55rem}h2{font-size:1.25rem}}
+</style>
+<script>MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head><body><h1>Tau Ceti ReductiveGroups roadmap 日次進捗 - 2026-10-02</h1>
+<p>対象期間: <strong>2026-10-01 09:00 → 2026-10-02 09:00 (Europe/Dublin)</strong>。 この期間に確認した <strong>roadmap-relevant substantive changes は18件</strong>。中心は <strong>Layer 6 の characteristic-zero / adjoint-form theory、Layer 7 の (SL_n) Borel、Layer 9 の integral reductive carriers</strong> です。</p>
+<h2>1. 今回前進した roadmap target</h2>
+<h3>Layer 6: Cartier theorem が完成</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/10478">PR #10478</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/ac256cfedb61e815d95e0d632bdbc283d20d37c2"><code>ac256cf</code></a> は characteristic zero の finite-type affine group schemes に対する Cartier theorem を formalize し、</p>
+<div class="math">\[oxed{
+operatorname{char}k=0,quad G/k	ext{ finite type}
+Longrightarrow G	ext{ smooth}
+}\]</div>
+<p>を証明しました。coordinate Hopf algebra の reducedness も帰結します。</p>
+<p>これは Layer 6 の characteristic-zero</p>
+<div class="math">\[	ext{reductive}iff	ext{linearly reductive}\]</div>
+<p>において、smoothness を別仮定として持ち回る必要をなくす重要な completion です。</p>
+<h3>Layer 6: (PGL_n) を matrix algebra の automorphism group scheme として構成</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/10542">PR #10542</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/6c59e2d0b9c4402a7fa8c069930ee404f7f93bd0"><code>6c59e2d</code></a> は</p>
+<div class="math">\[PGL_nsimeq operatorname{Aut}_{mathrm{alg}}(M_n)\]</div>
+<p>を closed subgroup scheme of (GL_{n^2}) として構成しました。さらに conjugation map</p>
+<div class="math">\[GL_nlongrightarrow PGL_n\]</div>
+<p>を group-scheme morphism として作り、scheme-theoretic kernel が center と一致すること、field-valued points では Skolem--Noether により surjective であることを証明しています。</p>
+<p>したがって (G/Z(G)) の concrete worked example に必要な <strong>candidate adjoint group scheme と quotient map</strong> が実体化しました。残るのは faithful flatness / fppf quotient representability を介した</p>
+<div class="math">\[GL_n/Z(GL_n)simeq PGL_n\]</div>
+<p>の scheme-level quotient identification です。</p>
+<h3>Layer 7: (SL_n) の upper-triangular subgroup scheme と solvable subgroup の triangularization</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/10763">PR #10763</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/15cd18518984560792de9f3e465d1a1a31357619"><code>15cd185</code></a> は任意 rank の (SL_n) に standard upper-triangular closed subgroup scheme を構成しました。</p>
+<p>さらに algebraically closed field 上の reduced connected solvable closed subgroup (Hsubset SL_n) が rational (SL_n)-point により upper-triangular subgroupへ conjugate されることを証明しました。これは (SL_n) Borel conjugacyへ直結する Lie--Kolchin step です。</p>
+<h3>Layer 9: reductive group schemes over a base と chosen split maximal torus</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/10778">PR #10778</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/16a66a1fffa2cebab667817cc751f19eda459cf5"><code>16a66a1</code></a> は、commutative base ring 上の reductive affine group scheme を</p>
+<ul>
+<li>smooth,</li>
+<li>geometric fibres connected reductive,</li>
+</ul>
+<p>として定義し、さらに <strong>chosen split maximal torus</strong> を data として持つ interface を導入しました。</p>
+<p>(SL_n) とその標準 diagonal torus が arbitrary commutative base ring 上の worked example になっています。これは Layer 9 の「split reductive group schemes over (mathbf Z)」を formal に語るための基盤そのものです。</p>
+<h3>Layer 9: integral Kostant toral closures の flatness</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/10758">PR #10758</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/2a26d21a8b54a9d79329c2b03d0521b6fd2c7eb7"><code>2a26d21</code></a> は integral Kostant toral closures の flatness を証明しました。</p>
+<p>explicit carrier を (mathbf Z) 上の split reductive group scheme として認識するには smoothness と合わせて flatness / good base change が必要なので、Layer 9 の arithmetic carrier recognition に直接効く結果です。</p>
+<h3>Layer 9: root-generated carriers が classical / spin types へ拡大</h3>
+<ul>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10456">#10456</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/f7573d2b53d5efaed23dc1266d44bd5be7dcf937"><code>f7573d2</code></a>: standard type (C) symplectic carrier が root-generated。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10580">#10580</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/234a8f9c7c7a7db99961acfaf715b7f0cb3bcd37"><code>234a8f9</code></a>: type (B) spin carrier が全 rank で root-generated。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10651">#10651</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/54a1cdce7881f6912759850236b64710ffb5b5d3"><code>54a1cdc</code></a>: standard type (A) carrier が root-generated。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10562">#10562</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/78848e389f216a5295835a2a4b872b063dfe12db"><code>78848e3</code></a>: generated Geck subgroup が smooth + connected。</li>
+</ul>
+<p>この結果、root-generated <strong>closed subgroup scheme</strong> と explicit toral carrier の equality は classical / exceptional の複数 branches で標準的な interface になり始めています。</p>
+<h3>Layer 9: diagram symmetry / pinning</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/10528">PR #10528</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/b2013efe9d1176ce5d6af81b6c6b4cf02f105486"><code>b2013ef</code></a> と <a href="https://github.com/TauCetiProject/TauCeti/pull/10535">PR #10535</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/1ad22e98f8ef9bbe494c602b6964dc2f623034ee"><code>1ad22e9</code></a> は、explicit carriers の graph automorphisms / diagram symmetries を numbered root subgroups による pinning と整合させました。</p>
+<p>これは twisted finite Lie-type groups の Steinberg maps へ downstream する一方、core roadmap では <strong>pinned carrier の symmetry interface</strong> を完成側へ進めるものです。</p>
+<h3>Layer 9: (E_6) unipotent radical elimination</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/10699">PR #10699</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/ad7ef48ee26114693505e85a231cb2bb17c00afd"><code>ad7ef48</code></a> は (E_6) minuscule carrier の unipotent radical を trivial にしました。既存の faithful/semisimple representation と smooth/connected geometryを結合する reductivity route の主要部分です。</p>
+<h3>Layer 7 / representation infrastructure: subgroup stabilizers</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/10463">PR #10463</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/fdcac877cb1276f043f55c39e7228971b97cacd8"><code>fdcac87</code></a> と <a href="https://github.com/TauCetiProject/TauCeti/pull/10428">PR #10428</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/c33f45d2ac0539410718c861bd67dabf6c64d621"><code>c33f45d</code></a> は subspace / top exterior line stabilizers を group-scheme として構成し、closed subgroups を representation-theoretic stabilizer として実現しました。Borel/parabolic constructions と characteristic-zero group/Lie stability comparisonの共通 infrastructureです。</p>
+<h3>Layer 7/9: spin weight Weyl orbits</h3>
+<ul>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10601">#10601</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/15609b391b8a7a5055dcb8f1bfde09f9af292e68"><code>15609b3</code></a>: type (B) spin weights が simple reflections の単一 orbit。</li>
+<li><a href="https://github.com/TauCetiProject/TauCeti/pull/10646">#10646</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/93316f805f15d19f140ec5754acc48aa66041af2"><code>93316f8</code></a>: type (D) spin basis の simple reflections と2つの Weyl orbits。</li>
+</ul>
+<p>これは spin representation の irreducibility / root datum recognition に使う combinatorial input です。</p>
+<h3>Layer 3: coinvariant quotient object</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/9979">PR #9979</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/75c143e7ffd3c4710a468ccae36273cf94a2e462"><code>75c143e</code></a> は normal subgroup quotient の coordinate candidate として coinvariant Hopf algebra を package しました。前日の fppf quotient exactnessと合わせ、general normal quotient representability の core algebraic object が明示されました。</p>
+<h3>Layer 9: chosen split maximal torus の base change</h3>
+<p><a href="https://github.com/TauCetiProject/TauCeti/pull/10811">PR #10811</a>, <a href="https://github.com/TauCetiProject/TauCeti/commit/8f6d4af87c0aecf5d2d6b50674cafbdd1a085bf3"><code>8f6d4af</code></a> は chosen split maximal torus data の arbitrary base change compatibility を formalizeしました。</p>
+<h2>2. 完成した endpoint</h2>
+<ol>
+<li>Cartier theorem: characteristic-zero finite-type affine groups are smooth。</li>
+<li>(PGL_n) group scheme と (GL_n	o PGL_n) conjugation map。</li>
+<li>(SL_n) upper-triangular subgroup scheme + connected solvable subgroup triangularization。</li>
+<li>reductive group scheme over a ring / chosen split maximal torus interface。</li>
+<li>type (A,B,C) carriers の root-generated group-scheme equality。</li>
+</ol>
+<h2>3. roadmap を支える reusable infrastructure</h2>
+<p>subspace stabilizer / exterior-line stabilizer、integral carrier flatness、chosen torus base change、diagram-symmetry pinningが今後の Borel/parabolic と integral pinned group comparisonに直結します。</p>
+<h2>4. 重要な refactor / maintenance / CI</h2>
+<p>root-system の type (D) API cleanups 等もありましたが、上記 substantive countには含めていません。</p>
+<h2>5. 現在の open gaps / blockers</h2>
+<ul>
+<li><strong>Layer 6:</strong> characteristic-zero reductive (Rightarrow) linearly reductive。Cartier theorem により smoothness inputは解消。</li>
+<li><strong>Layer 6:</strong> (GL_n/Z(GL_n)simeq PGL_n) を fppf quotientとして同定する faithful-flatness step。</li>
+<li><strong>Layer 7:</strong> (SL_n) upper-triangular subgroupが genuine Borelであること、Borel conjugacyの全 rank completion。</li>
+<li><strong>Layer 9:</strong> explicit carriers の reductivity / root datum / chosen maximal torus / pinned Chevalley-Demazure identification。</li>
+</ul></body></html>
