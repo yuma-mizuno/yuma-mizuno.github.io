@@ -19,6 +19,62 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
+    \entry{sonoda2026lean}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=2f21ece4e9535a03503a7186e62aec7f}{%
+           family={Sonoda},
+           familyi={S\bibinitperiod},
+           given={Sho},
+           giveni={S\bibinitperiod}}}%
+        {{hash=42184e7713b6bdf88284f10a4e9ae1a8}{%
+           family={Kasaura},
+           familyi={K\bibinitperiod},
+           given={Kazumi},
+           giveni={K\bibinitperiod}}}%
+        {{hash=376f6ede03a123a8934bf35f2c87fe62}{%
+           family={Mizuno},
+           familyi={M\bibinitperiod},
+           given={Yuma},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=7dfa7dee2dc54cc57c3b92182d05a46b}{%
+           family={Tsukamoto},
+           familyi={T\bibinitperiod},
+           given={Kei},
+           giveni={K\bibinitperiod}}}%
+        {{hash=ce3f3ae1372c737511acdd166b9337ee}{%
+           family={Onda},
+           familyi={O\bibinitperiod},
+           given={Naoto},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{5d17542d62204f60e5c00d5a27b16e8b}
+      \strng{fullhash}{842c03c239f963c5e2708905aef52bb8}
+      \strng{fullhashraw}{842c03c239f963c5e2708905aef52bb8}
+      \strng{bibnamehash}{842c03c239f963c5e2708905aef52bb8}
+      \strng{authorbibnamehash}{842c03c239f963c5e2708905aef52bb8}
+      \strng{authornamehash}{5d17542d62204f60e5c00d5a27b16e8b}
+      \strng{authorfullhash}{842c03c239f963c5e2708905aef52bb8}
+      \strng{authorfullhashraw}{842c03c239f963c5e2708905aef52bb8}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{17th International Conference on Interactive Theorem Proving (ITP 2026)}
+      \field{day}{16}
+      \field{month}{7}
+      \field{series}{Leibniz International Proceedings in Informatics (LIPIcs)}
+      \field{title}{{Lean Formalization of Generalization Error Bound by Rademacher Complexity and Dudley's Entropy Integral}}
+      \field{volume}{382}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{8:1\bibrangedash 8:17}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.4230/LIPIcs.ITP.2026.8
+      \endverb
+      \keyw{publication}
+    \endentry
     \entry{mizuno2026rotation}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=376f6ede03a123a8934bf35f2c87fe62}{%
@@ -36,8 +92,8 @@
       \strng{authorfullhash}{376f6ede03a123a8934bf35f2c87fe62}
       \strng{authorfullhashraw}{376f6ede03a123a8934bf35f2c87fe62}
       \field{extraname}{1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
@@ -70,8 +126,8 @@
       \strng{authorfullhash}{376f6ede03a123a8934bf35f2c87fe62}
       \strng{authorfullhashraw}{376f6ede03a123a8934bf35f2c87fe62}
       \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{9}
@@ -104,8 +160,8 @@
       \strng{authorfullhash}{376f6ede03a123a8934bf35f2c87fe62}
       \strng{authorfullhashraw}{376f6ede03a123a8934bf35f2c87fe62}
       \field{extraname}{3}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{5}
@@ -142,8 +198,8 @@
       \strng{authornamehash}{1d49d0e0aa95e9923d574eae1a131c52}
       \strng{authorfullhash}{1d49d0e0aa95e9923d574eae1a131c52}
       \strng{authorfullhashraw}{1d49d0e0aa95e9923d574eae1a131c52}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{math.GT}
@@ -184,8 +240,8 @@
       \strng{authornamehash}{33876e24e2657614d64084c17f4088f8}
       \strng{authorfullhash}{33876e24e2657614d64084c17f4088f8}
       \strng{authorfullhashraw}{33876e24e2657614d64084c17f4088f8}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{math.NT}
@@ -215,10 +271,11 @@
       \strng{authorfullhash}{376f6ede03a123a8934bf35f2c87fe62}
       \strng{authorfullhashraw}{376f6ede03a123a8934bf35f2c87fe62}
       \field{extraname}{4}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{eid}{094}
       \field{eprintclass}{math.QA}
       \field{eprinttype}{arXiv}
       \field{journaltitle}{SIGMA Symmetry Integrability Geom. Methods Appl.}
@@ -226,8 +283,6 @@
       \field{volume}{21}
       \field{year}{2025}
       \true{nocite}
-      \field{pages}{094}
-      \range{pages}{1}
       \verb{doi}
       \verb 10.3842/sigma.2025.094
       \endverb
@@ -253,10 +308,11 @@
       \strng{authorfullhash}{376f6ede03a123a8934bf35f2c87fe62}
       \strng{authorfullhashraw}{376f6ede03a123a8934bf35f2c87fe62}
       \field{extraname}{5}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{eid}{62}
       \field{eprintclass}{math.QA}
       \field{eprinttype}{arXiv}
       \field{journaltitle}{Ramanujan Journal}
@@ -264,8 +320,6 @@
       \field{volume}{66}
       \field{year}{2025}
       \true{nocite}
-      \field{pages}{62}
-      \range{pages}{1}
       \verb{doi}
       \verb 10.1007/s11139-025-01033-6
       \endverb
@@ -291,10 +345,11 @@
       \strng{authorfullhash}{376f6ede03a123a8934bf35f2c87fe62}
       \strng{authorfullhashraw}{376f6ede03a123a8934bf35f2c87fe62}
       \field{extraname}{6}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{eid}{19}
       \field{eprintclass}{math.AG}
       \field{eprinttype}{arXiv}
       \field{journaltitle}{Selecta Mathematica. New Series}
@@ -302,8 +357,6 @@
       \field{volume}{30}
       \field{year}{2024}
       \true{nocite}
-      \field{pages}{19}
-      \range{pages}{1}
       \verb{doi}
       \verb 10.1007/s00029-023-00906-2
       \endverb
@@ -372,6 +425,7 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{eid}{028}
       \field{eprintclass}{math.QA}
       \field{eprinttype}{arXiv}
       \field{journaltitle}{SIGMA Symmetry Integrability Geom. Methods Appl.}
@@ -379,8 +433,6 @@
       \field{volume}{16}
       \field{year}{2020}
       \true{nocite}
-      \field{pages}{028}
-      \range{pages}{1}
       \verb{doi}
       \verb 10.3842/sigma.2020.028
       \endverb
@@ -410,6 +462,7 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{eid}{101987}
       \field{eprintclass}{math.RT}
       \field{eprinttype}{arXiv}
       \field{journaltitle}{Advances in Applied Mathematics}
@@ -417,8 +470,6 @@
       \field{volume}{115}
       \field{year}{2020}
       \true{nocite}
-      \field{pages}{101987}
-      \range{pages}{1}
       \verb{doi}
       \verb 10.1016/j.aam.2019.101987
       \endverb
@@ -614,6 +665,62 @@
       \endverb
       \keyw{preprint}
     \endentry
+    \entry{sonoda2026lean}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=2f21ece4e9535a03503a7186e62aec7f}{%
+           family={Sonoda},
+           familyi={S\bibinitperiod},
+           given={Sho},
+           giveni={S\bibinitperiod}}}%
+        {{hash=42184e7713b6bdf88284f10a4e9ae1a8}{%
+           family={Kasaura},
+           familyi={K\bibinitperiod},
+           given={Kazumi},
+           giveni={K\bibinitperiod}}}%
+        {{hash=376f6ede03a123a8934bf35f2c87fe62}{%
+           family={Mizuno},
+           familyi={M\bibinitperiod},
+           given={Yuma},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=7dfa7dee2dc54cc57c3b92182d05a46b}{%
+           family={Tsukamoto},
+           familyi={T\bibinitperiod},
+           given={Kei},
+           giveni={K\bibinitperiod}}}%
+        {{hash=ce3f3ae1372c737511acdd166b9337ee}{%
+           family={Onda},
+           familyi={O\bibinitperiod},
+           given={Naoto},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{5d17542d62204f60e5c00d5a27b16e8b}
+      \strng{fullhash}{842c03c239f963c5e2708905aef52bb8}
+      \strng{fullhashraw}{842c03c239f963c5e2708905aef52bb8}
+      \strng{bibnamehash}{842c03c239f963c5e2708905aef52bb8}
+      \strng{authorbibnamehash}{842c03c239f963c5e2708905aef52bb8}
+      \strng{authornamehash}{5d17542d62204f60e5c00d5a27b16e8b}
+      \strng{authorfullhash}{842c03c239f963c5e2708905aef52bb8}
+      \strng{authorfullhashraw}{842c03c239f963c5e2708905aef52bb8}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{17th International Conference on Interactive Theorem Proving (ITP 2026)}
+      \field{day}{16}
+      \field{month}{7}
+      \field{series}{Leibniz International Proceedings in Informatics (LIPIcs)}
+      \field{title}{{Lean Formalization of Generalization Error Bound by Rademacher Complexity and Dudley's Entropy Integral}}
+      \field{volume}{382}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{8:1\bibrangedash 8:17}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.4230/LIPIcs.ITP.2026.8
+      \endverb
+      \keyw{publication}
+    \endentry
     \entry{decourcyireland2025divisibility}{misc}{}{}
       \name{author}{3}{}{%
         {{hash=0d8b27c463bb3bea5714eb0482661276}{%
@@ -677,6 +784,7 @@
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{eid}{094}
       \field{eprintclass}{math.QA}
       \field{eprinttype}{arXiv}
       \field{journaltitle}{SIGMA Symmetry Integrability Geom. Methods Appl.}
@@ -684,8 +792,6 @@
       \field{volume}{21}
       \field{year}{2025}
       \true{nocite}
-      \field{pages}{094}
-      \range{pages}{1}
       \verb{doi}
       \verb 10.3842/sigma.2025.094
       \endverb
@@ -715,6 +821,7 @@
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{eid}{62}
       \field{eprintclass}{math.QA}
       \field{eprinttype}{arXiv}
       \field{journaltitle}{Ramanujan Journal}
@@ -722,8 +829,6 @@
       \field{volume}{66}
       \field{year}{2025}
       \true{nocite}
-      \field{pages}{62}
-      \range{pages}{1}
       \verb{doi}
       \verb 10.1007/s11139-025-01033-6
       \endverb
@@ -753,6 +858,7 @@
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{eid}{19}
       \field{eprintclass}{math.AG}
       \field{eprinttype}{arXiv}
       \field{journaltitle}{Selecta Mathematica. New Series}
@@ -760,8 +866,6 @@
       \field{volume}{30}
       \field{year}{2024}
       \true{nocite}
-      \field{pages}{19}
-      \range{pages}{1}
       \verb{doi}
       \verb 10.1007/s00029-023-00906-2
       \endverb
@@ -830,6 +934,7 @@
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{eid}{028}
       \field{eprintclass}{math.QA}
       \field{eprinttype}{arXiv}
       \field{journaltitle}{SIGMA Symmetry Integrability Geom. Methods Appl.}
@@ -837,8 +942,6 @@
       \field{volume}{16}
       \field{year}{2020}
       \true{nocite}
-      \field{pages}{028}
-      \range{pages}{1}
       \verb{doi}
       \verb 10.3842/sigma.2020.028
       \endverb
@@ -868,6 +971,7 @@
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{eid}{101987}
       \field{eprintclass}{math.RT}
       \field{eprinttype}{arXiv}
       \field{journaltitle}{Advances in Applied Mathematics}
@@ -875,8 +979,6 @@
       \field{volume}{115}
       \field{year}{2020}
       \true{nocite}
-      \field{pages}{101987}
-      \range{pages}{1}
       \verb{doi}
       \verb 10.1016/j.aam.2019.101987
       \endverb
@@ -936,4 +1038,3 @@
   \enddatalist
 \endrefsection
 \endinput
-

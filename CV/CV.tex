@@ -25,6 +25,7 @@
 
 % personal data
 \name{Yuma}{Mizuno}
+\colorlet{firstnamecolor}{lastnamecolor}
 %\title{}                               % optional, remove / comment the line if not wanted
 \address{School of Mathematical Sciences, University College Cork}{Western Gateway Building, Western Road, Cork, Ireland}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 %\phone[mobile]{+1~(234)~567~890}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
@@ -48,8 +49,13 @@
 % bibliography with mutiple entries
 %\usepackage{multibib}
 %\newcites{book,misc}{{Books},{Others}}
-\usepackage[backend=biber,style=numeric,sorting=ydnt,defernumbers=true]{biblatex}
+\usepackage[backend=biber,style=numeric,sorting=ydnt,defernumbers=true,maxbibnames=99,giveninits=true]{biblatex}
+\DeclareFieldFormat*{title}{\mkbibemph{#1}}
+\DeclareFieldFormat{journaltitle}{#1}
+\DeclareFieldFormat{booktitle}{#1}
+\renewbibmacro{in:}{}
 \addbibresource{publications.bib}
+
 \defbibenvironment{bibliography}
   {\list{}{
       \setlength{\leftmargin}{0pt}
@@ -80,14 +86,14 @@
 %\cventry{year--year}{degree or job title}{institution or employer}{city}{grade}{description}
 
 \section{Teaching}
-\cvitem{Semester 2, 2025-2026}{Lecturer, University College Cork, Measure Theory and Integration}
-\cvitem{Fall 2021}{Part-time lecturer, Tokyo University of Agriculture and Technology, Calculus}
+\cvitem{Semester 2, 2025-2026}{Lecturer, University College Cork, Measure Theory and Integration (MA3064)}
+\cvitem{Fall 2021}{Part-time lecturer, Tokyo University of Agriculture and Technology, Calculus II and Exercises}
 
-\section{Fellowships}
+\section{Research Positions and Fellowships}
 \cvitem{2025--present}{Postdoctoral Researcher, University College Cork}
 \cvitem{2024--2025}{Postdoctoral Researcher, University College Dublin}
-\cvitem{2021--2024}{JSPS Research Fellow (PD), Japan Society for the Promotion of Sciences}
-\cvitem{2018--2021}{JSPS Research Fellow (DC1), Japan Society for the Promotion of Sciences}
+\cvitem{2021--2024}{JSPS Research Fellow (PD), Japan Society for the Promotion of Science}
+\cvitem{2018--2021}{JSPS Research Fellow (DC1), Japan Society for the Promotion of Science}
 
 
 %\section{Languages}
@@ -127,6 +133,49 @@
 \end{refcontext}
 \printbibliography[title={Publications},keyword={publication}]
 
+\section{Invited Talks}
+
+\cvitem{13 Jul 2026}{\textbf{Nahm sums from cluster transformations}, \textit{Workshop on Higher Teichmüller theory, knot theory and cluster algebras}, Cork, Ireland.}
+\cvitem{18 May 2026}{\textbf{Adjoint Reidemeister torsion for $G$-local systems on 3-manifolds with torus boundary}, \textit{Paris algebra seminar}, Paris, France.}
+\cvitem{15 Apr 2026}{\textbf{Adjoint Reidemeister torsion for $G$-local systems on 3-manifolds with torus boundary}, \textit{Research Seminar on Quantum Topology and Categorification (QTCat)}, Hamburg, Germany.}
+\cvitem{17 Feb 2026}{\textbf{Formalizing mathematics with Lean theorem prover}, \textit{Boole Colloquium in Mathematics}, Cork, Ireland.}
+\cvitem{9 Dec 2025}{\textbf{Adjoint Reidemeister torsion for $G$-local systems on 3-manifolds}, \textit{Geometry and Mathematical Physics seminar}, Birmingham, UK.}
+\cvitem{13 Nov 2025}{\textbf{Formalizing mathematics with theorem provers}, \textit{The 28th Workshop on Information-Based Induction Sciences (IBIS2025)}, Naha, Japan.}
+\cvitem{31 Oct 2025}{\textbf{Introduction to Lean theorem prover}, \textit{iTHEMS Math \& Computer Seminar}, Wako, Japan.}
+\cvitem{18 Jun 2025}{\textbf{Lean theorem prover and monoidal category theory}, \textit{BIMSA-Tsinghua Quantum Symmetry Seminar}, Online.}
+\cvitem{19 Feb 2025}{\textbf{Geometry of $q$-Painlevé equations and cluster structures}, \textit{Asymptotic Expansion of $\tau$-functions and Related Topics}, Kyoto, Japan.}
+\cvitem{12 Mar 2024}{\textbf{Cluster algebras and $q$-series}, \textit{$q$-Series and Related Topics}, Osaka, Japan.}
+\cvitem{11 Mar 2024}{\textbf{Cluster structures on $q$-Painlevé systems via toric geometry}, \textit{Advances in Cluster Algebras 2024}, Nagoya, Japan.}
+\cvitem{16 Dec 2023}{\textbf{Geometry of $q$-Painlevé systems and cluster structures}, \textit{Comprehensive Studies of Differential Equations}, Tokyo, Japan.}
+\cvitem{21 Jun 2023}{\textbf{Classification of periodic $Y$-systems of rank 2}, \textit{Cluster algebras and related topics in East Asia}, Seoul, South Korea.}
+\cvitem{30 May 2023}{\textbf{Modularity of Nahm sums and periodicity phenomena in cluster algebras}, \textit{South Osaka Algebra Seminar}, Osaka, Japan.}
+\cvitem{26 Oct 2022}{\textbf{$q$-Painlevé systems, toric surfaces, and cluster Poisson varieties}, \textit{Painlevé Equations: From Classical to Modern Analysis}, Strasbourg, France.}
+\cvitem{14 May 2022}{\textbf{Nahm's problem and cluster algebras}, \textit{AMS Spring Western Virtual Sectional Meeting}, Online.}
+\cvitem{18 Nov 2021}{\textbf{Nahm's problem and cluster algebras}, \textit{UCD Algebra and Number Theory seminar}, Online.}
+\cvitem{28 Sep 2021}{\textbf{$q$-Painlevé systems on cluster Poisson varieties}, \textit{Infinite Analysis 21 Workshop Around Cluster Algebras}, Online.}
+\cvitem{17 Jul 2020}{\textbf{$T$-systems and $Y$-systems in cluster algebras}, \textit{South Osaka Algebra Seminar}, Online.}
+\cvitem{18 Jun 2020}{\textbf{Difference equations arising from cluster algebras}, \textit{Representation Theory Seminar (RIMS)}, Online.}
+\cvitem{12 Dec 2019}{\textbf{The Cartan--Killing classification and its extensions in cluster algebras}, \textit{Workshop on Combinatorics and Related Topics in Shinshu, Winter 2019}, Matsumoto, Japan.}
+\cvitem{13 Feb 2019}{\textbf{Exponents associated with $Y$-systems}, \textit{Tokyo Institute of Technology Topology Seminar}, Tokyo, Japan.}
+\cvitem{22 Jan 2019}{\textbf{Combinatorics of ideal triangulations and quiver mutations}, \textit{The 14th East Asian Conference on Geometric Topology}, Beijing, China.}
+\cvitem{6 Dec 2017}{\textbf{Ideal triangulations of 3-manifolds and mutation loops}, \textit{Infinite Analysis 17 -Algebraic and Combinatorial Aspects in Integrable Systems-}, Osaka, Japan.}
+
+\section{Other Talks and Presentations}
+
+\cvitem{17 Jan 2025}{\textbf{Metaprogramming on monoidal categories}, \textit{Lean Together 2025}, Online.}
+\cvitem{30 Oct 2023}{\textbf{Computations with morphisms in monoidal categories in Lean}, \textit{The 19th Theorem Proving and Provers meeting}, Tokyo, Japan.}
+\cvitem{22 Oct 2022}{\textbf{Computations on monoidal categories in the proof assistant Lean}, \textit{Topology and Computers 2022}, Higashihiroshima, Japan.}
+\cvitem{14 Sep 2022}{\textbf{Mutations of blowups of toric surfaces and $q$-Painlevé systems}, \textit{Mathematical Society of Japan Autumn Meeting 2022}, Sapporo, Japan.}
+\cvitem{11 Aug 2022}{\textbf{Mutations of blowups of toric surfaces and $q$-Painlevé systems}, \textit{Summer Seminar on Functional Equations 2022}, Mori, Japan.}
+\cvitem{31 Mar 2022}{\textbf{Mutations of blowups of toric surfaces and $q$-Painlevé system}, \textit{Mathematical Society of Japan Annual Meeting 2022 (abstract only; no oral presentation)}, Online.}
+\cvitem{25 Jun 2021}{\textbf{Cluster algebras and spaces of initial conditions for $q$-Painlevé systems}, \textit{ALTReT 2021}, Online.}
+\cvitem{4 Mar 2021}{\textbf{$q$-Painlevé systems on cluster varieties}, \textit{The 17th Mathematics Conference for Young Researchers}, Sapporo, Japan.}
+\cvitem{17 Jun 2019}{\textbf{Exponents associated with periodic $Y$-systems}, \textit{Cluster Algebras 2019 (CA19) (poster)}, Kyoto, Japan.}
+\cvitem{19 Mar 2019}{\textbf{Exponents associated with $Y$-systems of type $X_r$ at level $l$}, \textit{Mathematical Society of Japan Annual Meeting 2019}, Tokyo, Japan.}
+\cvitem{6 Mar 2019}{\textbf{Determinant identities associated with mutation sequences}, \textit{The 15th Mathematics Conference for Young Researchers}, Sapporo, Japan.}
+\cvitem{24 Sep 2018}{\textbf{Jacobian matrices of $Y$-seed mutations and mutation networks}, \textit{Mathematical Society of Japan Autumn Meeting 2018}, Okayama, Japan.}
+\cvitem{13 Feb 2018}{\textbf{Jacobian matrices of cluster transformations and representations of affine Lie algebras}, \textit{The 1st Seminar for New Researchers in Mathematics}, Kyoto, Japan.}
+\cvitem{26 Mar 2017}{\textbf{Quiver mutations and $q$-binomial identities}, \textit{Mathematical Society of Japan Annual Meeting 2017}, Hachioji, Japan.}
 \end{document}
 
 

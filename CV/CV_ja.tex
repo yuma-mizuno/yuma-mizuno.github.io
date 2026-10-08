@@ -1,18 +1,24 @@
 \documentclass[10pt,a4paper,sans]{moderncv}
 \moderncvstyle{classic}
 \moderncvcolor{black}
+
 \usepackage[haranoaji]{luatexja-preset}
 \renewcommand{\kanjifamilydefault}{\gtdefault}
 \usepackage[scale=0.78]{geometry}
 \setlength{\hintscolumnwidth}{3.2cm}
 \name{水野}{勇磨}
+\colorlet{firstnamecolor}{lastnamecolor}
 \title{履歴書}
-% Overseas institutions and the postal address retain their official English names.
 \address{School of Mathematical Sciences, University College Cork}{Western Gateway Building, Western Road, Cork, Ireland}
 \email{mizuno.y.aj@gmail.com}
 \extrainfo{\href{https://github.com/yuma-mizuno}{GitHub}\quad\href{https://researchmap.jp/yuma_mizuno}{researchmap}}
-\usepackage[backend=biber,style=numeric,sorting=ydnt,defernumbers=true]{biblatex}
+\usepackage[backend=biber,style=numeric,sorting=ydnt,defernumbers=true,maxbibnames=99,giveninits=true]{biblatex}
+\DeclareFieldFormat*{title}{\mkbibemph{#1}}
+\DeclareFieldFormat{journaltitle}{#1}
+\DeclareFieldFormat{booktitle}{#1}
+\renewbibmacro{in:}{}
 \addbibresource{publications.bib}
+
 \defbibenvironment{bibliography}
   {\list{}{\setlength{\leftmargin}{0pt}\setlength{\itemindent}{0pt}
       \setlength{\itemsep}{\bibitemsep}\setlength{\parsep}{\bibparsep}}}
@@ -27,10 +33,10 @@
 \cventry{2016年3月}{学士（理学）}{東京工業大学 理学部 情報科学科}{}{}{}
 
 \section{教育歴}
-\cvitem{2025--2026年度\newline 第2学期}{University College Cork 講師\newline 担当科目：Measure Theory and Integration（測度論と積分）}
-\cvitem{2021年度 後期}{東京農工大学 非常勤講師\newline 担当科目：微分積分}
+\cvitem{2025--2026年度\\第2学期}{University College Cork 講師\newline 担当科目：Measure Theory and Integration (MA3064)}
+\cvitem{2021年度 後期}{東京農工大学 非常勤講師\newline 担当科目：微分積分学Ⅱおよび演習}
 
-\section{職歴・研究歴}
+\section{研究職・フェローシップ}
 \cvitem{2025年--現在}{University College Cork 博士研究員}
 \cvitem{2024年--2025年}{University College Dublin 博士研究員}
 \cvitem{2021年--2024年}{日本学術振興会 特別研究員（PD）}
@@ -41,4 +47,47 @@
 \printbibliography[title={プレプリント},keyword={preprint}]
 \end{refcontext}
 \printbibliography[title={出版論文},keyword={publication}]
+\section{招待講演}
+
+\cvitem{2026年7月13日}{\textbf{Nahm sums from cluster transformations}, \textit{Workshop on Higher Teichmüller theory, knot theory and cluster algebras}, Cork, Ireland.}
+\cvitem{2026年5月18日}{\textbf{Adjoint Reidemeister torsion for $G$-local systems on 3-manifolds with torus boundary}, \textit{Paris algebra seminar}, Paris, France.}
+\cvitem{2026年4月15日}{\textbf{Adjoint Reidemeister torsion for $G$-local systems on 3-manifolds with torus boundary}, \textit{Research Seminar on Quantum Topology and Categorification (QTCat)}, Hamburg, Germany.}
+\cvitem{2026年2月17日}{\textbf{Formalizing mathematics with Lean theorem prover}, \textit{Boole Colloquium in Mathematics}, Cork, Ireland.}
+\cvitem{2025年12月9日}{\textbf{Adjoint Reidemeister torsion for $G$-local systems on 3-manifolds}, \textit{Geometry and Mathematical Physics seminar}, Birmingham, UK.}
+\cvitem{2025年11月13日}{\textbf{定理証明系による数学の形式化}, \textit{第28回情報論的学習理論ワークショップ (IBIS2025)}, 那覇, 日本.}
+\cvitem{2025年10月31日}{\textbf{Introduction to Lean theorem prover}, \textit{iTHEMS Math \& Computer Seminar}, 和光, 日本.}
+\cvitem{2025年6月18日}{\textbf{Lean theorem prover and monoidal category theory}, \textit{BIMSA-Tsinghua Quantum Symmetry Seminar}, オンライン.}
+\cvitem{2025年2月19日}{\textbf{Geometry of $q$-Painlevé equations and cluster structures}, \textit{Asymptotic Expansion of $\tau$-functions and Related Topics}, 京都, 日本.}
+\cvitem{2024年3月12日}{\textbf{クラスター代数と$q$級数}, \textit{$q$級数とその周辺}, 大阪, 日本.}
+\cvitem{2024年3月11日}{\textbf{Cluster structures on $q$-Painlevé systems via toric geometry}, \textit{Advances in Cluster Algebras 2024}, 名古屋, 日本.}
+\cvitem{2023年12月16日}{\textbf{Geometry of $q$-Painlevé systems and cluster structures}, \textit{微分方程式の総合的研究}, 東京, 日本.}
+\cvitem{2023年6月21日}{\textbf{Classification of periodic $Y$-systems of rank 2}, \textit{Cluster algebras and related topics in East Asia}, Seoul, South Korea.}
+\cvitem{2023年5月30日}{\textbf{Modularity of Nahm sums and periodicity phenomena in cluster algebras}, \textit{南大阪代数セミナー}, 大阪, 日本.}
+\cvitem{2022年10月26日}{\textbf{$q$-Painlevé systems, toric surfaces, and cluster Poisson varieties}, \textit{Painlevé Equations: From Classical to Modern Analysis}, Strasbourg, France.}
+\cvitem{2022年5月14日}{\textbf{Nahm's problem and cluster algebras}, \textit{AMS Spring Western Virtual Sectional Meeting}, オンライン.}
+\cvitem{2021年11月18日}{\textbf{Nahm's problem and cluster algebras}, \textit{UCD Algebra and Number Theory seminar}, オンライン.}
+\cvitem{2021年9月28日}{\textbf{$q$-Painlevé systems on cluster Poisson varieties}, \textit{Infinite Analysis 21 Workshop Around Cluster Algebras}, オンライン.}
+\cvitem{2020年7月17日}{\textbf{$T$-systems and $Y$-systems in cluster algebras}, \textit{南大阪代数セミナー}, オンライン.}
+\cvitem{2020年6月18日}{\textbf{Difference equations arising from cluster algebras}, \textit{Representation Theory Seminar (RIMS)}, オンライン.}
+\cvitem{2019年12月12日}{\textbf{クラスター代数におけるCartan-Killingの分類とその拡張について}, \textit{組合せ論とその周辺ワークショップ in 信州 -2019 冬-}, 松本, 日本.}
+\cvitem{2019年2月13日}{\textbf{$Y$システムに付随する冪指数について}, \textit{東工大トポロジーセミナー}, 東京, 日本.}
+\cvitem{2019年1月22日}{\textbf{Combinatorics of ideal triangulations and quiver mutations}, \textit{The 14th East Asian Conference on Geometric Topology}, Beijing, China.}
+\cvitem{2017年12月6日}{\textbf{Ideal triangulations of 3-manifolds and mutation loops}, \textit{Infinite Analysis 17 -Algebraic and Combinatorial Aspects in Integrable Systems-}, 大阪, 日本.}
+
+\section{その他の講演・発表}
+
+\cvitem{2025年1月17日}{\textbf{Metaprogramming on monoidal categories}, \textit{Lean Together 2025}, オンライン.}
+\cvitem{2023年10月30日}{\textbf{Leanにおけるモノイダル圏の射の計算}, \textit{The 19th Theorem Proving and Provers meeting}, 東京, 日本.}
+\cvitem{2022年10月22日}{\textbf{Computations on monoidal categories in the proof assistant Lean}, \textit{トポロジーとコンピュータ 2022}, 東広島, 日本.}
+\cvitem{2022年9月14日}{\textbf{Mutations of blowups of toric surfaces and $q$-Painlevé systems}, \textit{日本数学会 2022年度秋季総合分科会}, 札幌, 日本.}
+\cvitem{2022年8月11日}{\textbf{トーリック曲面のブローアップの変異と$q$-Painlevé系}, \textit{2022年度函数方程式論サマーセミナー}, 森町, 日本.}
+\cvitem{2022年3月31日}{\textbf{Mutations of blowups of toric surfaces and $q$-Painlevé system}, \textit{日本数学会 2022年度年会} (アブストラクトのみ・口頭発表なし), オンライン.}
+\cvitem{2021年6月25日}{\textbf{クラスター代数と$q$-パンルヴェ系の初期値空間}, \textit{ALTReT 2021}, オンライン.}
+\cvitem{2021年3月4日}{\textbf{クラスター多様体上の$q$-パンルヴェ系}, \textit{第17回数学総合若手研究集会}, 札幌, 日本.}
+\cvitem{2019年6月17日}{\textbf{Exponents associated with periodic $Y$-systems}, \textit{Cluster Algebras 2019 (CA19)} (ポスター発表), 京都, 日本.}
+\cvitem{2019年3月19日}{\textbf{レベル$l$の$X_r$型$Y$システムに付随する指数}, \textit{日本数学会2019年度年会}, 東京, 日本.}
+\cvitem{2019年3月6日}{\textbf{ミューテーション列に付随する行列式の恒等式}, \textit{第15回数学総合若手研究集会}, 札幌, 日本.}
+\cvitem{2018年9月24日}{\textbf{Jacobian matrices of $Y$-seed mutations and mutation networks}, \textit{日本数学会2018年度秋季総合分科会}, 岡山, 日本.}
+\cvitem{2018年2月13日}{\textbf{クラスター変換のヤコビ行列とアフィンLie代数の表現}, \textit{第1回 数理新人セミナー}, 京都, 日本.}
+\cvitem{2017年3月26日}{\textbf{クイバーのミューテーションと$q$-二項係数の等式}, \textit{日本数学会2017年度年会}, 八王子, 日本.}
 \end{document}
